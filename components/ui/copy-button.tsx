@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check } from "lucide-react";
+import { Copy, Check } from "@/lib/icons";
 
 interface CopyButtonProps {
   code: string;

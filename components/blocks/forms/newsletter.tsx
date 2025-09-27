@@ -15,7 +15,7 @@ import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { toast } from 'sonner';
 import { useCallback } from 'react';
-import { Loader2 } from 'lucide-react';
+import { Loader2 } from '@/lib/icons';
 import { stegaClean } from 'next-sanity';
 import { PAGE_QUERYResult } from '@/sanity.types';
 

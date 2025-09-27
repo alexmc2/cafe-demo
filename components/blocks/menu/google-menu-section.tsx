@@ -11,7 +11,7 @@ import {
   type CSSProperties,
 } from 'react';
 import { stegaClean } from 'next-sanity';
-import { MenuIcon, MoreHorizontal } from 'lucide-react';
+import { MenuIcon, MoreHorizontal } from '@/lib/icons';
 
 import SectionContainer from '@/components/ui/section-container';
 import { cn } from '@/lib/utils';

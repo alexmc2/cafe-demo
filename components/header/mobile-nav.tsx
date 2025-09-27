@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import Logo from '@/components/logo';
 import { useState } from 'react';
-import { AlignRight } from 'lucide-react';
+import { AlignRight } from '@/lib/icons';
 import { SETTINGS_QUERYResult, NAVIGATION_QUERYResult } from '@/sanity.types';
 import { ModeToggle } from '@/components/menu-toggle';
 

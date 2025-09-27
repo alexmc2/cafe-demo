@@ -21,8 +21,8 @@ export default function Hero1({
   links,
 }: Hero1Props) {
   const dimensions = image?.asset?.metadata?.dimensions;
-  const intrinsicWidth = Math.round(dimensions?.width ?? 1600);
-  const targetWidth = Math.min(1600, Math.max(intrinsicWidth, 800));
+  const intrinsicWidth = Math.round(dimensions?.width ?? 1400);
+  const targetWidth = Math.min(1280, Math.max(intrinsicWidth, 720));
   const aspectRatio =
     dimensions?.width && dimensions?.height
       ? dimensions.width / dimensions.height
@@ -36,7 +36,7 @@ export default function Hero1({
     const heroImageBuilder = urlFor(image)
       .width(targetWidth)
       .fit('max')
-      .quality(85);
+      .quality(70);
 
     heroImageUrl = targetHeight
       ? heroImageBuilder.height(targetHeight).url()

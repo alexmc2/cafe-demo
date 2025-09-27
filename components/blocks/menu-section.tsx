@@ -332,17 +332,17 @@ export default function MenuSection({
           <div className="pointer-events-none absolute inset-0 -z-10">
             <Image
               src={urlFor(customBackgroundImage)
-                .width(2400)
+                .width(1600)
                 .height(
                   Math.round(
                     ((customBackgroundImage.asset.metadata?.dimensions
-                      ?.height || 1600) /
+                      ?.height || 1200) /
                       (customBackgroundImage.asset.metadata?.dimensions
                         ?.width || 1600)) *
-                      2400
+                      1600
                   )
                 )
-                .quality(60)
+                .quality(55)
                 .url()}
               alt={customBackgroundImage.alt || 'Decorative menu background'}
               fill

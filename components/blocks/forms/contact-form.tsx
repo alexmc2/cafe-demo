@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from 'sonner';
 import { stegaClean } from 'next-sanity';
-import { Loader2 } from 'lucide-react';
+import { Loader2 } from '@/lib/icons';
 
 import SectionContainer from '@/components/ui/section-container';
 import { Button } from '@/components/ui/button1';

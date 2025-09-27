@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight } from "@/lib/icons";
 import { Badge } from "@/components/ui/badge";
 import { PAGE_QUERYResult, ColorVariant } from "@/sanity.types";
 

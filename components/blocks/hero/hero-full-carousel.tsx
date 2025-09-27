@@ -165,11 +165,11 @@ export function HeroFullCarousel({
           const dimensions = carouselImage?.asset?.metadata?.dimensions as
             | { width?: number | null; height?: number | null }
             | undefined;
-          const maxWidth = Math.min(2200, Math.round(dimensions?.width ?? 2200));
+          const maxWidth = Math.min(1600, Math.round(dimensions?.width ?? 1600));
           const imageSrc = urlFor(carouselImage)
             .width(maxWidth)
             .fit('max')
-            .quality(80)
+            .quality(70)
             .url();
 
           return (

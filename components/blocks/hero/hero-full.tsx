@@ -63,9 +63,9 @@ export default function HeroFull({
     }
 
     const dimensions = img.asset?.metadata?.dimensions;
-    const maxWidth = Math.min(2200, Math.round(dimensions?.width ?? 2200));
+    const maxWidth = Math.min(1600, Math.round(dimensions?.width ?? 1600));
 
-    return urlFor(img).width(maxWidth).fit('max').quality(80).url();
+    return urlFor(img).width(maxWidth).fit('max').quality(70).url();
   };
 
   const primaryHeroImage = heroImages[0];

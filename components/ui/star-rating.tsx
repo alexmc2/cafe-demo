@@ -1,5 +1,5 @@
 // components/ui/star-rating.tsx
-import { Star, StarHalf } from "lucide-react";
+import { Star, StarHalf } from "@/lib/icons";
 import { cn } from "@/lib/utils";
 
 export function StarRating({
