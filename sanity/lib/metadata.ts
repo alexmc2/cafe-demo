@@ -16,7 +16,11 @@ export function generatePageMetadata({
   slug: string;
 }) {
   const rawMetaTitle = page?.meta_title?.trim();
-  const rawTitle = typeof page?.title === "string" ? page.title.trim() : null;
+  const documentTitle =
+    typeof page === "object" && page && "title" in page
+      ? (page as { title?: string | null }).title
+      : null;
+  const rawTitle = typeof documentTitle === "string" ? documentTitle.trim() : null;
   const title = rawMetaTitle?.length ? rawMetaTitle : rawTitle ?? siteTitle;
 
   const rawDescription = page?.meta_description?.trim();
