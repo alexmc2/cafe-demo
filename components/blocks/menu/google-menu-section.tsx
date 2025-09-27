@@ -1154,7 +1154,7 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
                 className="backdrop-blur-xl border border-[color:var(--menu-border-color)] bg-background text-[color:var(--menu-headline)] dark:border-[color:var(--menu-border-color-dark)] dark:bg-[color:var(--menu-background-dark)] dark:text-[color:var(--menu-headline-dark)]"
                 style={paletteStyle}
               >
-                <SheetHeader className="border-b border-[color:var(--menu-border-color)] px-4 py-4 dark:border-[color:var(--menu-border-color-dark)]">
+                <SheetHeader className="border-b border-[color:var(--menu-border-color)] px-4 pt-5 dark:border-[color:var(--menu-border-color-dark)]">
                   <SheetTitle className="text-lg font-semibold text-[color:var(--menu-headline)] dark:text-[color:var(--menu-headline-dark)]">
                     {title ? stegaClean(title) : 'Menu'}
                   </SheetTitle>

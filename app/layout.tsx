@@ -23,6 +23,7 @@ const metadataBase = (() => {
 
 const defaultDescription =
   'Schema UI Starter is a Sanity-powered marketing site built with the Next.js App Router.';
+const defaultLogoUrl = new URL('/demo-logo.svg', metadataBase).toString();
 
 export const metadata: Metadata = {
   metadataBase,
@@ -45,6 +46,9 @@ export const metadata: Metadata = {
     type: 'website',
   },
   robots: !isProduction ? 'noindex, nofollow' : 'index, follow',
+  other: {
+    'og:logo': defaultLogoUrl,
+  },
 };
 
 export default function RootLayout({

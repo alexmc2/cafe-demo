@@ -7,6 +7,7 @@ const fallbackSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:30
 const siteDescription =
   "Schema UI Starter is a Sanity-powered marketing experience built with Next.js.";
 const siteTitle = "Sanity Next.js Website | Schema UI Starter";
+const siteLogoUrl = new URL("/demo-logo.svg", fallbackSiteUrl).toString();
 
 export function generatePageMetadata({
   page,
@@ -45,6 +46,9 @@ export function generatePageMetadata({
       ],
       locale: "en_US",
       type: "website",
+    },
+    other: {
+      "og:logo": siteLogoUrl,
     },
     robots: !isProduction
       ? "noindex, nofollow"
