@@ -8,6 +8,8 @@ export const locationMapQuery = groq`
     _key,
     padding,
     colorVariant,
+    heading,
+    headingAlignment,
     locationLabel,
     locationName,
     address,
@@ -16,4 +18,3 @@ export const locationMapQuery = groq`
     mapZoom,
   }
 `;
-

@@ -21,6 +21,7 @@ import hero1 from "./schemas/blocks/hero/hero-1";
 import hero2 from "./schemas/blocks/hero/hero-2";
 import heroFull from "./schemas/blocks/hero/hero-full";
 import sectionHeader from "./schemas/blocks/section-header";
+import richTextBlock from "./schemas/blocks/rich-text-block";
 import splitRow from "./schemas/blocks/split/split-row";
 import splitContent from "./schemas/blocks/split/split-content";
 import splitCardsList from "./schemas/blocks/split/split-cards-list";
@@ -71,6 +72,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     hero2,
     heroFull,
     sectionHeader,
+    richTextBlock,
     splitRow,
     splitContent,
     splitCardsList,

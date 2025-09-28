@@ -6,10 +6,15 @@ import { PAGE_QUERYResult } from "@/sanity.types";
 import GridCard from "./grid-card";
 import PricingCard from "./pricing-card";
 import GridPost from "./grid-post";
+import RichTextGridColumn from "./rich-text-column";
+import type { RichTextBlockProps } from "@/components/blocks/rich-text-block";
 
 type Block = NonNullable<NonNullable<PAGE_QUERYResult>["blocks"]>[number];
 type GridRow = Extract<Block, { _type: "grid-row" }>;
-type GridColumn = NonNullable<NonNullable<GridRow["columns"]>[number]>;
+type GridColumn = NonNullable<
+  | (NonNullable<GridRow["columns"]>[number])
+  | RichTextBlockProps
+>;
 
 const componentMap: {
   [K in GridColumn["_type"]]: React.ComponentType<
@@ -19,6 +24,7 @@ const componentMap: {
   "grid-card": GridCard,
   "pricing-card": PricingCard,
   "grid-post": GridPost,
+  "rich-text-block": RichTextGridColumn,
 };
 
 export default function GridRow({

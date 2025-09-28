@@ -44,6 +44,7 @@ export default defineType({
         { type: "hero-2" },
         { type: "hero-full" },
         { type: "section-header" },
+        { type: "rich-text-block" },
         { type: "lottie-animation" },
         { type: "menu-section" },
         { type: "menu-google-section" },
@@ -78,6 +79,11 @@ export default defineType({
               name: "section-header",
               title: "Section Header",
               of: ["section-header"],
+            },
+            {
+              name: "content",
+              title: "Content",
+              of: ["rich-text-block"],
             },
             {
               name: "animation",

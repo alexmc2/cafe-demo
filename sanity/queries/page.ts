@@ -21,6 +21,7 @@ import { allPostsQuery } from "./all-posts";
 import { menuSectionQuery } from "./menu-section";
 import { menuGoogleSectionQuery } from "./menu-google-section";
 import { lottieAnimationQuery } from "./lottie-animation";
+import { richTextBlockQuery } from "./rich-text-block";
 
 export const PAGE_QUERY = groq`
   *[_type == "page" && slug.current == $slug][0]{
@@ -29,6 +30,7 @@ export const PAGE_QUERY = groq`
       ${hero2Query},
       ${heroFullQuery},
       ${sectionHeaderQuery},
+      ${richTextBlockQuery},
       ${lottieAnimationQuery},
       ${splitRowQuery},
       ${gridRowQuery},

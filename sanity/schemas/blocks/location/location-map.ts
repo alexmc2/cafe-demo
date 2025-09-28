@@ -20,6 +20,27 @@ export default defineType({
       description: "Select a background color variant for the section",
     }),
     defineField({
+      name: "heading",
+      title: "Heading",
+      type: "string",
+      description: "Optional title displayed above the map (e.g. Our location).",
+    }),
+    defineField({
+      name: "headingAlignment",
+      title: "Heading Alignment",
+      type: "string",
+      description: "Align the heading within the section.",
+      options: {
+        list: [
+          { title: "Left", value: "left" },
+          { title: "Center", value: "center" },
+          { title: "Right", value: "right" },
+        ],
+        layout: "radio",
+      },
+      initialValue: "left",
+    }),
+    defineField({
       name: "locationLabel",
       title: "Label",
       type: "string",
@@ -78,15 +99,15 @@ export default defineType({
   ],
   preview: {
     select: {
+      heading: "heading",
       title: "locationName",
       subtitle: "locationLabel",
     },
-    prepare({ title, subtitle }) {
+    prepare({ heading, title, subtitle }) {
       return {
-        title: title || "Location map",
-        subtitle: subtitle || "No label",
+        title: heading || title || "Location map",
+        subtitle: subtitle || heading || title || "No label",
       };
     },
   },
 });
-

@@ -57,6 +57,7 @@ export default defineType({
         { type: "split-cards-list" },
         { type: "split-image" },
         { type: "split-info-list" },
+        { type: "rich-text-block" },
       ],
       validation: (rule) => rule.max(2),
       options: {

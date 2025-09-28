@@ -14,6 +14,8 @@ export type LocationMapBlock = {
   _key: string;
   padding?: SectionPadding | null;
   colorVariant?: ColorVariant | null;
+  heading?: string | null;
+  headingAlignment?: "left" | "center" | "right" | null;
   locationLabel?: string | null;
   locationName?: string | null;
   address?: string | null;
@@ -30,6 +32,8 @@ const cleanString = (value?: string | null) =>
 export default function LocationMap({
   padding,
   colorVariant,
+  heading,
+  headingAlignment,
   locationLabel,
   locationName,
   address,
@@ -38,6 +42,26 @@ export default function LocationMap({
   mapZoom,
 }: LocationMapProps) {
   const cleanedColor = colorVariant ? stegaClean(colorVariant) : undefined;
+  const cleanedHeading = cleanString(heading);
+  const headingAlignmentValue = (() => {
+    if (!headingAlignment) {
+      return "left" as const;
+    }
+
+    const alignment = stegaClean(headingAlignment);
+
+    if (alignment === "center" || alignment === "right") {
+      return alignment;
+    }
+
+    return "left" as const;
+  })();
+  const headingAlignClass =
+    headingAlignmentValue === "center"
+      ? "text-center"
+      : headingAlignmentValue === "right"
+        ? "text-right"
+        : "text-left";
   const cleanedLabel = cleanString(locationLabel) ?? "Our location";
   const locationNameQuery = cleanString(locationName);
   const cleanedLocationName = locationNameQuery ?? "Location";
@@ -77,7 +101,14 @@ export default function LocationMap({
 
   return (
     <SectionContainer color={cleanedColor} padding={padding}>
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl space-y-6">
+        {cleanedHeading ? (
+          <h2
+            className={`${headingAlignClass} text-3xl font-semibold tracking-tight text-foreground`}
+          >
+            {cleanedHeading}
+          </h2>
+        ) : null}
         <div className="rounded-lg border bg-background shadow-sm">
           {hasMap ? (
             <iframe
@@ -90,8 +121,8 @@ export default function LocationMap({
               className="h-[320px] w-full rounded-t-lg"
             />
           ) : (
-            <div className="flex h-[320px] w-full items-center justify-center rounded-t-lg bg-muted text-center text-sm text-muted-foreground">
-              Add location coordinates or an address to display an embedded map.
+            <div className="flex h-[320px] w-full items-center justify-center rounded-t-lg bg-muted text-sm font-medium text-muted-foreground">
+              Add an address or coordinates to show the embedded map
             </div>
           )}
           <div className="space-y-3 p-6">

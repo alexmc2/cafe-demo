@@ -253,6 +253,8 @@ export type LocationMap = {
   _type: "location-map";
   padding?: SectionPadding;
   colorVariant?: "background" | "foreground" | "card" | "card-foreground" | "popover" | "popover-foreground" | "primary" | "primary-foreground" | "secondary" | "secondary-foreground" | "muted" | "muted-foreground" | "accent" | "accent-foreground" | "destructive" | "destructive-foreground" | "white" | "white-foreground" | "black" | "black-foreground" | "light-gray" | "light-gray-foreground" | "cool-gray" | "cool-gray-foreground" | "soft-blue" | "soft-blue-foreground" | "sky-blue" | "sky-blue-foreground" | "mint" | "mint-foreground" | "sand" | "sand-foreground" | "peach" | "peach-foreground" | "slate" | "slate-foreground" | "navy" | "navy-foreground" | "charcoal" | "charcoal-foreground";
+  heading?: string;
+  headingAlignment?: "left" | "center" | "right";
   locationLabel?: string;
   locationName?: string;
   address?: string;
