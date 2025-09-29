@@ -7,6 +7,8 @@ import {
   RICH_TEXT_FONT_SIZE,
   RICH_TEXT_TEXT_ALIGN,
   RICH_TEXT_WIDTH,
+  RICH_TEXT_TEXT_COLOR,
+  RICH_TEXT_SPACING,
 } from "./shared/layout-variants";
 
 export default defineType({
@@ -71,6 +73,26 @@ export default defineType({
         layout: "radio",
       },
       initialValue: "base",
+    }),
+    defineField({
+      name: "spacing",
+      type: "string",
+      title: "Vertical Spacing",
+      options: {
+        list: RICH_TEXT_SPACING.map(({ title, value }) => ({ title, value })),
+        layout: "radio",
+      },
+      initialValue: "comfortable",
+    }),
+    defineField({
+      name: "textColorVariant",
+      type: "string",
+      title: "Text Color",
+      options: {
+        list: RICH_TEXT_TEXT_COLOR.map(({ title, value }) => ({ title, value })),
+        layout: "radio",
+      },
+      initialValue: "foreground",
     }),
     defineField({
       name: "body",

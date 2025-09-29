@@ -11,6 +11,9 @@ export default function RichTextGridColumn({ color: _color, ...props }: RichText
       textAlign={props.textAlign}
       fontFamily={props.fontFamily}
       fontSize={props.fontSize}
+      textColorVariant={props.textColorVariant}
+      spacing={props.spacing}
+      padding={props.padding}
       context="inline"
     />
   );

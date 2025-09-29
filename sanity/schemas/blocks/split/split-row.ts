@@ -58,6 +58,8 @@ export default defineType({
         { type: "split-image" },
         { type: "split-info-list" },
         { type: "rich-text-block" },
+        { type: "split-contact-form" },
+        { type: "split-location-map" },
       ],
       validation: (rule) => rule.max(2),
       options: {

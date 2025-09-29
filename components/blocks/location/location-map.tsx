@@ -6,6 +6,7 @@ import { stegaClean } from "next-sanity";
 
 import SectionContainer from "@/components/ui/section-container";
 import type { ColorVariant, SectionPadding } from "@/sanity.types";
+import { cn } from "@/lib/utils";
 
 const GOOGLE_MAPS_EMBED_BASE = "https://maps.google.com/maps";
 
@@ -24,7 +25,11 @@ export type LocationMapBlock = {
   mapZoom?: number | null;
 };
 
-type LocationMapProps = LocationMapBlock;
+export type LocationMapLayout = "section" | "inline";
+
+type LocationMapProps = LocationMapBlock & {
+  layout?: LocationMapLayout;
+};
 
 const cleanString = (value?: string | null) =>
   value ? stegaClean(value) : undefined;
@@ -40,8 +45,10 @@ export default function LocationMap({
   latitude,
   longitude,
   mapZoom,
+  layout = "section",
 }: LocationMapProps) {
-  const cleanedColor = colorVariant ? stegaClean(colorVariant) : undefined;
+  const cleanedColor =
+    layout === "section" && colorVariant ? stegaClean(colorVariant) : undefined;
   const cleanedHeading = cleanString(heading);
   const headingAlignmentValue = (() => {
     if (!headingAlignment) {
@@ -99,45 +106,71 @@ export default function LocationMap({
 
   const hasMap = Boolean(mapSrc);
 
-  return (
-    <SectionContainer color={cleanedColor} padding={padding}>
-      <div className="mx-auto max-w-4xl space-y-6">
-        {cleanedHeading ? (
-          <h2
-            className={`${headingAlignClass} text-3xl font-semibold tracking-tight text-foreground`}
-          >
-            {cleanedHeading}
-          </h2>
-        ) : null}
-        <div className="rounded-lg border bg-background shadow-sm">
-          {hasMap ? (
-            <iframe
-              title={cleanedLocationName || "Map"}
-              src={mapSrc ?? undefined}
-              width="100%"
-              height="320"
-              loading="lazy"
-              allowFullScreen
-              className="h-[320px] w-full rounded-t-lg"
-            />
-          ) : (
-            <div className="flex h-[320px] w-full items-center justify-center rounded-t-lg bg-muted text-sm font-medium text-muted-foreground">
-              Add an address or coordinates to show the embedded map
-            </div>
+  const wrapperClasses = cn(
+    "space-y-6",
+    layout === "section"
+      ? "mx-auto max-w-4xl"
+      : "w-full rounded-2xl border border-border/60 bg-background/80 p-6 shadow-sm backdrop-blur"
+  );
+
+  const mapHeightClass = layout === "inline" ? "h-64" : "h-[320px]";
+  const detailsPaddingClass = layout === "inline" ? "space-y-3 p-5" : "space-y-3 p-6";
+
+  const content = (
+    <div className={wrapperClasses}>
+      {cleanedHeading ? (
+        <h2
+          className={cn(
+            headingAlignClass,
+            "text-3xl font-semibold tracking-tight text-foreground"
           )}
-          <div className="space-y-3 p-6">
-            <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              {cleanedLabel}
-            </div>
-            <div className="text-lg font-semibold text-foreground">{cleanedLocationName}</div>
-            {cleanedAddress && (
-              <p className="text-base whitespace-pre-line text-muted-foreground/90">
-                {cleanedAddress}
-              </p>
+        >
+          {cleanedHeading}
+        </h2>
+      ) : null}
+      <div className="overflow-hidden rounded-lg border bg-background shadow-sm">
+        {hasMap ? (
+          <iframe
+            title={cleanedLocationName || "Map"}
+            src={mapSrc ?? undefined}
+            width="100%"
+            height="320"
+            loading="lazy"
+            allowFullScreen
+            className={`${mapHeightClass} w-full`}
+          />
+        ) : (
+          <div
+            className={cn(
+              "flex w-full items-center justify-center bg-muted text-sm font-medium text-muted-foreground",
+              mapHeightClass
             )}
+          >
+            Add an address or coordinates to show the embedded map
           </div>
+        )}
+        <div className={detailsPaddingClass}>
+          <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+            {cleanedLabel}
+          </div>
+          <div className="text-lg font-semibold text-foreground">{cleanedLocationName}</div>
+          {cleanedAddress && (
+            <p className="whitespace-pre-line text-base text-muted-foreground/90">
+              {cleanedAddress}
+            </p>
+          )}
         </div>
       </div>
+    </div>
+  );
+
+  if (layout === "inline") {
+    return <div className="flex h-full flex-col justify-center">{content}</div>;
+  }
+
+  return (
+    <SectionContainer color={cleanedColor} padding={padding}>
+      {content}
     </SectionContainer>
   );
 }

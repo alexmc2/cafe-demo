@@ -58,3 +58,22 @@ export const RICH_TEXT_FONT_SIZE = [
   { title: "3XL", value: "3xl" },
   { title: "4XL", value: "4xl" },
 ];
+
+export const RICH_TEXT_TEXT_COLOR = [
+  { title: "Default", value: "foreground" },
+  { title: "Muted", value: "muted-foreground" },
+  { title: "Accent", value: "accent" },
+  { title: "Accent Foreground", value: "accent-foreground" },
+  { title: "Primary", value: "primary" },
+  { title: "Primary Foreground", value: "primary-foreground" },
+  { title: "Secondary", value: "secondary" },
+  { title: "Secondary Foreground", value: "secondary-foreground" },
+  { title: "White", value: "white" },
+  { title: "Black", value: "black" },
+];
+
+export const RICH_TEXT_SPACING = [
+  { title: "Compact", value: "compact" },
+  { title: "Comfortable", value: "comfortable" },
+  { title: "Spacious", value: "spacious" },
+];

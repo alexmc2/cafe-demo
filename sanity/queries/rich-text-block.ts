@@ -15,6 +15,8 @@ export const richTextBlockQuery = groq`
     textAlign,
     fontFamily,
     fontSize,
+    spacing,
+    textColorVariant,
     body[]{
       ${bodyQuery}
     },

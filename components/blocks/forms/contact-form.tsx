@@ -35,7 +35,11 @@ export type ContactFormBlock = {
   successMessage?: string | null;
 };
 
-type FormContactProps = ContactFormBlock;
+export type ContactFormLayout = 'section' | 'inline';
+
+type FormContactProps = ContactFormBlock & {
+  layout?: ContactFormLayout;
+};
 
 const contactFormSchema = z.object({
   name: z.string().min(1, {
@@ -65,8 +69,10 @@ export default function ContactForm({
   formspreeFormId,
   submitButtonLabel,
   successMessage,
+  layout = 'section',
 }: FormContactProps) {
-  const cleanedColor = colorVariant ? stegaClean(colorVariant) : undefined;
+  const cleanedColor =
+    layout === 'section' && colorVariant ? stegaClean(colorVariant) : undefined;
   const cleanedHeading = cleanString(heading);
   const cleanedBody = cleanString(body);
   const cleanedFormId = cleanString(formspreeFormId);
@@ -128,94 +134,114 @@ export default function ContactForm({
     await handleSubmit(values);
   }
 
+  const wrapperClasses = cn(
+    'space-y-8',
+    layout === 'section'
+      ? 'mx-auto max-w-2xl'
+      : 'w-full rounded-2xl border border-border/60 bg-background/80 p-6 shadow-sm backdrop-blur'
+  );
+
+  const headerClasses = cn(
+    'space-y-4',
+    layout === 'inline' ? 'space-y-3' : undefined
+  );
+
+  const content = (
+    <div className={wrapperClasses}>
+      {(cleanedHeading || cleanedBody) && (
+        <div className={headerClasses}>
+          {cleanedHeading && (
+            <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">
+              {cleanedHeading}
+            </h2>
+          )}
+          {cleanedBody && (
+            <p className="whitespace-pre-line text-muted-foreground">
+              {cleanedBody}
+            </p>
+          )}
+        </div>
+      )}
+      <Form {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-6"
+          noValidate
+        >
+          <FormField
+            control={form.control}
+            name="name"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Name</FormLabel>
+                <FormControl>
+                  <Input
+                    {...field}
+                    placeholder="Your name"
+                    autoComplete="name"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input
+                    {...field}
+                    type="email"
+                    placeholder="you@yourbusiness.co.uk"
+                    autoComplete="email"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="message"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Message</FormLabel>
+                <FormControl>
+                  <textarea
+                    {...field}
+                    rows={5}
+                    className={cn(
+                      formFieldBaseClasses,
+                      'flex min-h-[160px] resize-y px-3 py-3'
+                    )}
+                    placeholder="How can we help?"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit" disabled={isSubmitting} className="dark:bg-sky-500">
+            {isSubmitting && (
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+            )}
+            {cleanedSubmitLabel || 'Send message'}
+          </Button>
+        </form>
+      </Form>
+    </div>
+  );
+
+  if (layout === 'inline') {
+    return <div className="flex h-full flex-col justify-center">{content}</div>;
+  }
+
   return (
     <SectionContainer color={cleanedColor} padding={padding}>
-      <div className="mx-auto max-w-2xl space-y-8">
-        {(cleanedHeading || cleanedBody) && (
-          <div className="space-y-4">
-            {cleanedHeading && (
-              <h2 className="text-3xl font-semibold tracking-tight lg:text-4xl">
-                {cleanedHeading}
-              </h2>
-            )}
-            {cleanedBody && (
-              <p className="text-muted-foreground whitespace-pre-line">
-                {cleanedBody}
-              </p>
-            )}
-          </div>
-        )}
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-6"
-            noValidate
-          >
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Name</FormLabel>
-                  <FormControl>
-                    <Input
-                      {...field}
-                      placeholder="Your name"
-                      autoComplete="name"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email</FormLabel>
-                  <FormControl>
-                    <Input
-                      {...field}
-                      type="email"
-                      placeholder="you@yourbusiness.co.uk"
-                      autoComplete="email"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="message"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Message</FormLabel>
-                  <FormControl>
-                    <textarea
-                      {...field}
-                      rows={5}
-                      className={cn(
-                        formFieldBaseClasses,
-                        'flex min-h-[160px] resize-y px-3 py-3'
-                      )}
-                      placeholder="How can we help?"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit" disabled={isSubmitting} className='dark:bg-sky-500'>
-              {isSubmitting && (
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              )}
-              {cleanedSubmitLabel || 'Send message'}
-            </Button>
-          </form>
-        </Form>
-      </div>
+      {content}
     </SectionContainer>
   );
 }

@@ -20,12 +20,21 @@ export type RichTextBlockProps = {
   textAlign?: RichTextStyleOptions["textAlign"] | null;
   fontFamily?: RichTextStyleOptions["fontFamily"] | null;
   fontSize?: RichTextStyleOptions["fontSize"] | null;
+  textColorVariant?: RichTextStyleOptions["textColor"] | null;
+  spacing?: RichTextStyleOptions["spacing"] | null;
   body?: PortableTextBlock[] | null;
 };
 
 export type RichTextContentProps = Pick<
   RichTextBlockProps,
-  "body" | "contentWidth" | "textAlign" | "fontFamily" | "fontSize"
+  | "body"
+  | "contentWidth"
+  | "textAlign"
+  | "fontFamily"
+  | "fontSize"
+  | "textColorVariant"
+  | "spacing"
+  | "padding"
 > & { context?: RichTextStyleOptions["context"] };
 
 const sanitizeString = (value?: string | null) => {
@@ -43,6 +52,9 @@ export function RichTextContent({
   textAlign,
   fontFamily,
   fontSize,
+  textColorVariant,
+  spacing,
+  padding,
   context = "standalone",
 }: RichTextContentProps) {
   if (!body || body.length === 0) {
@@ -54,12 +66,16 @@ export function RichTextContent({
     textAlign: sanitizeString(textAlign) as RichTextStyleOptions["textAlign"],
     fontFamily: sanitizeString(fontFamily) as RichTextStyleOptions["fontFamily"],
     fontSize: sanitizeString(fontSize) as RichTextStyleOptions["fontSize"],
+    textColor: sanitizeString(textColorVariant) as RichTextStyleOptions["textColor"],
+    spacing: sanitizeString(spacing) as RichTextStyleOptions["spacing"],
+    paddingTop: context === "inline" ? Boolean(padding?.top) : false,
+    paddingBottom: context === "inline" ? Boolean(padding?.bottom) : false,
     context,
   });
 
   return (
     <div className={className}>
-      <PortableTextRenderer value={body} />
+      <PortableTextRenderer value={body} spacing="none" />
     </div>
   );
 }
@@ -72,19 +88,28 @@ export default function RichTextBlock({
   textAlign,
   fontFamily,
   fontSize,
+  textColorVariant,
+  spacing,
   body,
 }: RichTextBlockProps) {
   const color = sanitizeString(colorVariant) as ColorVariant | undefined;
   const colorDark = sanitizeString(colorVariantDark) as ColorVariant | undefined;
 
   return (
-    <SectionContainer color={color ?? undefined} colorDark={colorDark ?? undefined} padding={padding}>
+    <SectionContainer
+      color={color ?? undefined}
+      colorDark={colorDark ?? undefined}
+      padding={padding}
+    >
       <RichTextContent
         body={body}
         contentWidth={contentWidth}
         textAlign={textAlign}
         fontFamily={fontFamily}
         fontSize={fontSize}
+        textColorVariant={textColorVariant}
+        spacing={spacing}
+        padding={padding}
         context="standalone"
       />
     </SectionContainer>

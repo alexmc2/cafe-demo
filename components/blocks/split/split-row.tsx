@@ -9,6 +9,8 @@ import SplitImage from './split-image';
 import SplitInfoList from './split-info-list';
 import SplitRichTextColumn from './rich-text-column';
 import type { RichTextBlockProps } from '@/components/blocks/rich-text-block';
+import SplitContactForm from './split-contact-form';
+import SplitLocationMap from './split-location-map';
 
 type Block = NonNullable<NonNullable<PAGE_QUERYResult>['blocks']>[number];
 type SplitRow = Extract<Block, { _type: 'split-row' }>;
@@ -28,6 +30,8 @@ const componentMap: {
   'split-image': SplitImage,
   'split-info-list': SplitInfoList,
   'rich-text-block': SplitRichTextColumn,
+  'split-contact-form': SplitContactForm,
+  'split-location-map': SplitLocationMap,
 };
 
 export default function SplitRow({

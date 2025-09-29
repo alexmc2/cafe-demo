@@ -5,6 +5,8 @@ import { splitCardsListQuery } from "./split-cards-list";
 import { splitImageQuery } from "./split-image";
 import { splitInfoListQuery } from "./split-info-list";
 import { richTextBlockQuery } from "@/sanity/queries/rich-text-block";
+import { splitContactFormQuery } from "./split-contact-form";
+import { splitLocationMapQuery } from "./split-location-map";
 
 // @sanity-typegen-ignore
 export const splitRowQuery = groq`
@@ -22,6 +24,8 @@ export const splitRowQuery = groq`
       ${splitImageQuery},
       ${splitInfoListQuery},
       ${richTextBlockQuery},
+      ${splitContactFormQuery},
+      ${splitLocationMapQuery},
     },
   }
 `;
