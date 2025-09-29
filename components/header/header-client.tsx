@@ -24,6 +24,7 @@ export default function HeaderClient({
 
   const [overHero, setOverHero] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [heroPrefersSolidHeader, setHeroPrefersSolidHeader] = useState(false);
 
   // Avoid forcing theme on first paint to keep main thread idle
 
@@ -31,22 +32,51 @@ export default function HeaderClient({
   const headerRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
+    const root = document.documentElement;
+    const setHeaderHeightVar = () => {
+      const headerHeight = headerRef.current?.offsetHeight ?? 0;
+
+      if (headerHeight > 0) {
+        root.style.setProperty('--header-height', `${headerHeight}px`);
+      } else {
+        root.style.removeProperty('--header-height');
+      }
+    };
+
+    setHeaderHeightVar();
+
     if (!onHome) {
       setOverHero(false);
       setScrolled(true);
-      return;
+      setHeroPrefersSolidHeader(false);
+      return () => {
+        root.style.removeProperty('--header-height');
+      };
     }
 
     const heroEl =
       document.getElementById('hero') ||
       (document.querySelector('[data-hero]') as HTMLElement | null);
 
+    const readPrefersSolid = () =>
+      heroEl?.dataset.headerInitiallyVisible === 'true';
+
+    let prefersSolid = readPrefersSolid();
+    setHeroPrefersSolidHeader(Boolean(prefersSolid));
+
     const BUFFER = 64; // flip solid slightly before hero ends
     let raf = 0;
 
     const update = () => {
       raf = 0;
+      setHeaderHeightVar();
       setScrolled(window.scrollY > 8); // tiny scroll → frosted
+
+      const currentPrefersSolid = readPrefersSolid();
+      if (currentPrefersSolid !== prefersSolid) {
+        prefersSolid = currentPrefersSolid;
+        setHeroPrefersSolidHeader(Boolean(currentPrefersSolid));
+      }
 
       if (heroEl) {
         const rect = heroEl.getBoundingClientRect();
@@ -66,34 +96,51 @@ export default function HeaderClient({
     update();
     window.addEventListener('scroll', onScrollOrResize, { passive: true });
     window.addEventListener('resize', onScrollOrResize);
-    const ro = heroEl ? new ResizeObserver(onScrollOrResize) : null;
-    if (heroEl) ro!.observe(heroEl);
-    if (headerRef.current) ro?.observe(headerRef.current);
+    const observers: ResizeObserver[] = [];
+
+    if (typeof ResizeObserver !== 'undefined') {
+      const resizeObserver = new ResizeObserver(onScrollOrResize);
+      observers.push(resizeObserver);
+
+      if (heroEl) resizeObserver.observe(heroEl);
+      if (headerRef.current) resizeObserver.observe(headerRef.current);
+    }
 
     return () => {
       window.removeEventListener('scroll', onScrollOrResize);
       window.removeEventListener('resize', onScrollOrResize);
-      ro?.disconnect();
+      observers.forEach((observer) => observer.disconnect());
       if (raf) cancelAnimationFrame(raf);
+      root.style.removeProperty('--header-height');
     };
   }, [onHome]);
 
-  // Transparent at top, frosted when scrolling over hero, solid elsewhere
-  const headerClass =
-    onHome && overHero
-      ? scrolled
-        ? 'border-transparent bg-background/10 supports-[backdrop-filter]:backdrop-blur-md'
-        : 'border-transparent bg-transparent'
-      : 'border-white/10 bg-background shadow-xs supports-[backdrop-filter]:backdrop-blur';
+  const isOverHero = onHome && overHero;
+  const navIsSolid = heroPrefersSolidHeader || !isOverHero;
 
-  // Force white text when over hero
-  const textClass = onHome && overHero ? 'text-white' : 'text-foreground';
+  const transparentClass =
+    'border-transparent bg-transparent';
+  const frostedClass =
+    'border-transparent bg-background/10 supports-[backdrop-filter]:backdrop-blur-md';
+  const solidClass =
+    'border-white/10 bg-background shadow-xs supports-[backdrop-filter]:backdrop-blur';
+
+  // Transparent at top, frosted when scrolling over hero, solid elsewhere
+  const headerClass = isOverHero
+    ? heroPrefersSolidHeader
+      ? solidClass
+      : scrolled
+        ? frostedClass
+        : transparentClass
+    : solidClass;
+
+  const textClass = navIsSolid ? 'text-foreground' : 'text-white';
 
   const modeToggleClass = cn(
     'transition-colors duration-300',
-    onHome && overHero
-      ? 'text-white/90 hover:text-white'
-      : 'text-foreground hover:text-foreground'
+    navIsSolid
+      ? 'text-foreground hover:text-foreground'
+      : 'text-white/90 hover:text-white'
   );
 
   return (
@@ -107,7 +154,7 @@ export default function HeaderClient({
       >
         <div
           className={cn(
-            'container flex h-16 items-center justify-between gap-6 transition-colors duration-500',
+            'container flex min-h-[3.5rem] items-center justify-between gap-6 py-3 sm:py-4 transition-colors duration-500',
             textClass
           )}
         >
@@ -132,7 +179,7 @@ export default function HeaderClient({
           <div className="hidden items-center gap-6 xl:flex">
             <DesktopNav
               navigation={navigation}
-              isSolid={!(onHome && overHero)}
+              isSolid={navIsSolid}
             />
             <ModeToggle className={modeToggleClass} />
           </div>
@@ -140,21 +187,25 @@ export default function HeaderClient({
           <div
             className={cn(
               'flex items-center gap-2 xl:hidden',
-              onHome && overHero ? 'text-white' : 'text-foreground'
+              textClass
             )}
           >
             <ModeToggle className={modeToggleClass} />
             <MobileNav
               navigation={navigation}
               settings={settings}
-              isSolid={!(onHome && overHero)}
+              isSolid={navIsSolid}
             />
           </div>
         </div>
       </header>
 
       {/* Spacer so content doesn’t jump under fixed header */}
-      <div aria-hidden className="h-14 w-full" />
+      <div
+        aria-hidden
+        className="w-full"
+        style={{ height: 'var(--header-height, 5.5rem)' }}
+      />
     </>
   );
 }

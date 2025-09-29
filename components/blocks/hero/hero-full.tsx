@@ -1,4 +1,6 @@
 // components/blocks/hero/hero-full.tsx
+import type { CSSProperties } from 'react';
+
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
 import PortableTextRenderer from '@/components/portable-text-renderer';
@@ -17,6 +19,7 @@ type HeroFullProps = {
   frosted?: boolean | null;
   overlayStrength?: number | null;
   contentAlignment?: 'left' | 'center' | 'right' | null;
+  initialHeaderVisible?: boolean | null;
 };
 
 export default function HeroFull({
@@ -30,6 +33,7 @@ export default function HeroFull({
   frosted = true,
   overlayStrength = 50,
   contentAlignment = 'center',
+  initialHeaderVisible = false,
 }: HeroFullProps) {
   const isFullScreen = !height || height === 'screen';
   const resolvedMinHeight = !isFullScreen ? height || '60vh' : undefined;
@@ -73,14 +77,25 @@ export default function HeroFull({
     ? buildHeroImageUrl(primaryHeroImage)
     : undefined;
 
+  const headerHeightVar = 'var(--header-height, 5.5rem)';
+  const heroStyle: CSSProperties = {
+    marginTop: `calc(${headerHeightVar} * -1)`,
+    minHeight: isFullScreen
+      ? `calc(100vh + ${headerHeightVar})`
+      : `calc(${resolvedMinHeight ?? '60vh'} + ${headerHeightVar})`,
+  };
+
   return (
     <section
       id="hero" // ← add this here
+      data-hero
+      data-header-initially-visible={
+        initialHeaderVisible ? 'true' : undefined
+      }
       className={cn(
-        'relative w-full overflow-hidden',
-        isFullScreen && '-mt-14 min-h-[calc(100vh+3.5rem)]'
+        'relative w-full overflow-hidden'
       )}
-      style={!isFullScreen ? { minHeight: resolvedMinHeight } : undefined}
+      style={heroStyle}
     >
       {(heroImages.length > 0 || overlay) && (
         <div className="absolute inset-0">

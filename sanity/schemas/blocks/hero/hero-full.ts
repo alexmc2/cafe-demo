@@ -86,6 +86,15 @@ export default defineType({
       group: "settings",
     }),
     defineField({
+      name: "initialHeaderVisible",
+      title: "Show Header On Load",
+      type: "boolean",
+      description:
+        "Keep the navigation bar solid while the hero is in view.",
+      initialValue: false,
+      group: "settings",
+    }),
+    defineField({
       name: "frosted",
       title: "Frosted Text Background",
       type: "boolean",

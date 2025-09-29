@@ -24,5 +24,6 @@ export const heroFullQuery = groq`
     frosted,
     overlayStrength,
     contentAlignment,
+    initialHeaderVisible,
   }
 `;
