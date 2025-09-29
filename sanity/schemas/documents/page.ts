@@ -52,6 +52,7 @@ export default defineType({
         { type: "grid-row" },
         { type: "carousel-1" },
         { type: "carousel-2" },
+        { type: "image-gallery" },
         { type: "reviews-carousel" },
         { type: "timeline-row" },
         { type: "cta-1" },
@@ -109,6 +110,11 @@ export default defineType({
               name: "carousel",
               title: "Carousel",
               of: ["carousel-1", "carousel-2"],
+            },
+            {
+              name: "gallery",
+              title: "Gallery",
+              of: ["image-gallery"],
             },
             {
               name: "reviews",

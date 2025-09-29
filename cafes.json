@@ -1,0 +1,4958 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-09-29T11:43:01Z",
+    "timestamp_areas_base": "2025-09-29T05:01:08Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 20921877,
+      "lat": 52.2099727,
+      "lon": 0.1172091,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "2",
+        "addr:postcode": "CB5 8AB",
+        "addr:street": "Quayside",
+        "amenity": "cafe",
+        "cuisine": "italian",
+        "indoor_seating": "yes",
+        "name": "Benedetto's",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 295797100,
+      "lat": 52.2160809,
+      "lon": 0.1329975,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "Hawthorn Way Corner",
+        "addr:housenumber": "253",
+        "addr:postcode": "CB4 1BG",
+        "addr:street": "Chesterton Road",
+        "amenity": "cafe",
+        "fhrs:id": "1472650",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Stir",
+        "opening_hours": "Mo-Sa 08:00-16:00; Su 09:00-16:00",
+        "source": "knowledge",
+        "website": "https://stircambridge.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 296496343,
+      "lat": 52.1980923,
+      "lon": 0.1432929,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "2",
+        "addr:parentstreet": "Mill Road",
+        "addr:postcode": "CB1 3AH",
+        "addr:street": "The Broadway",
+        "amenity": "cafe",
+        "fhrs:id": "1812573",
+        "name": "Black Cat Café",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa 09:00-18:00; Su 09:00-17:00",
+        "website": "https://www.blackcatcafecambridge.co.uk/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 296497676,
+      "lat": 52.1976712,
+      "lon": 0.1440878,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "196",
+        "addr:postcode": "CB1 3NF",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;cocktails;charcuterie",
+        "fhrs:id": "1472773",
+        "name": "196 Mill Road",
+        "opening_hours": "Mo-Th 17:00-23:00; Fr 17:00-00:30; Sa 16:00-00:30; Su 17:00-22:00",
+        "source": "survey",
+        "website": "https://www.196bar.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 296500372,
+      "lat": 52.1975554,
+      "lon": 0.1446006,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "210",
+        "addr:postcode": "CB1 3NF",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "fhrs:id": "1473332",
+        "name": "BLD's",
+        "note": "Reportedly stands for Breakfast, Lunch, and Dinner",
+        "opening_hours": "Mo-Sa 08:00-17:30; Su 09:00-17:00",
+        "phone": "+44 1223 416500",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298291231,
+      "lat": 52.2047976,
+      "lon": 0.1179039,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "17",
+        "addr:postcode": "CB2 1SP",
+        "addr:street": "King's Parade",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "brand:wikipedia": "en:Caffè Nero",
+        "check_date": "2024-08-22",
+        "check_date:opening_hours": "2024-08-22",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472905",
+        "indoor_seating": "yes",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Fr 07:00-20:00; Sa-Su 07:30-20:00",
+        "outdoor_seating": "yes",
+        "source": "survey",
+        "source:addr": "shop_door",
+        "takeaway": "yes",
+        "website": "https://www.caffenero.com/uk/stores/cambridge-kings-parade",
+        "wikidata": "Q26616708"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298291233,
+      "lat": 52.2049879,
+      "lon": 0.1179253,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "21",
+        "addr:postcode": "CB2 1SP",
+        "addr:street": "King's Parade",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/BenetsCafeCambridge/",
+        "fhrs:id": "1473550",
+        "name": "Benets",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298846555,
+      "lat": 52.1971243,
+      "lon": 0.1291421,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "40",
+        "addr:postcode": "CB2 1LA",
+        "addr:street": "Hills Road",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "check_date": "2025-07-09",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473127",
+        "indoor_seating": "yes",
+        "name": "Costa",
+        "opening_hours": "Mo-Sa 07:00-19:00; Su 07:00-17:00",
+        "outdoor_seating": "no",
+        "source": "visitation;previous_node",
+        "source:opening_hours": "window_signage",
+        "takeaway": "yes",
+        "used_to_be": "Da Massimo (Italian cafe)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298858209,
+      "lat": 52.2004086,
+      "lon": 0.1265832,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "77",
+        "addr:postcode": "CB2 1AW",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "cuisine": "korean",
+        "fhrs:id": "1472703",
+        "name": "Kim's Bulgogi",
+        "opening_hours": "Mo-Sa 12:00-20:00; Su off",
+        "website": "https://www.kimsbulgogi.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298859162,
+      "lat": 52.2016513,
+      "lon": 0.1250372,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "24",
+        "addr:postcode": "CB2 1DB",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/regent24/",
+        "fhrs:id": "1740572",
+        "name": "Cafe 24"
+      }
+    },
+    {
+      "type": "node",
+      "id": 298981712,
+      "lat": 52.1886904,
+      "lon": 0.13949,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "60",
+        "addr:postcode": "CB1 7AA",
+        "addr:street": "Cherry Hinton Road",
+        "amenity": "cafe",
+        "cuisine": "sandwich",
+        "fhrs:id": "1662296",
+        "name": "Kanto Cafe & Bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 301281552,
+      "lat": 52.204842,
+      "lon": 0.1217488,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "22",
+        "addr:postcode": "CB2 3NA",
+        "addr:street": "Lion Yard",
+        "amenity": "cafe",
+        "check_date": "2023-12-25",
+        "cuisine": "dessert",
+        "fhrs:id": "1473079",
+        "indoor_seating": "yes",
+        "name": "B Tap Baron",
+        "outdoor_seating": "no",
+        "source:addr": "FHRS Open Data",
+        "website": "https://www.btapbaron.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302359002,
+      "lat": 52.2080414,
+      "lon": 0.1182251,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "11",
+        "addr:postcode": "CB2 1TW",
+        "addr:street": "St John's Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-03-01",
+        "fhrs:id": "1472908",
+        "name": "Le Patissier",
+        "opening_hours:signed": "no",
+        "phone": "+44 1223 568336",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302362943,
+      "lat": 52.2069124,
+      "lon": 0.1212308,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "10-11",
+        "addr:postcode": "CB1 1PA",
+        "addr:street": "Sussex Street",
+        "amenity": "cafe",
+        "fhrs:id": "1473374",
+        "name": "Tatties",
+        "opening_hours": "Mo-Sa 08:30-07:00, Su 09:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302365014,
+      "lat": 52.206258,
+      "lon": 0.1199136,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "10-15",
+        "addr:postcode": "CB2 3PF",
+        "addr:street": "Market Passage",
+        "amenity": "cafe",
+        "fhrs:id": "1473052",
+        "name": "Ta Bouche"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302365445,
+      "lat": 52.2060556,
+      "lon": 0.1197995,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "11",
+        "addr:postcode": "CB2 3PA",
+        "addr:street": "Market Street",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "brand:wikipedia": "en:Caffè Nero",
+        "check_date": "2024-08-22",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472733",
+        "indoor_seating": "yes",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Sa 07:00-20:00; Su 07:00-19:30",
+        "operator": "Caffe Nero",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "website": "https://www.caffenero.com/uk/stores/cambridge-market-st",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302366787,
+      "lat": 52.2062245,
+      "lon": 0.118835,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "5a",
+        "addr:postcode": "CB2 3LL",
+        "addr:street": "Rose Crescent",
+        "amenity": "cafe",
+        "email": "info@laraza.co.uk",
+        "fhrs:id": "1473786",
+        "name": "La Raza",
+        "outdoor_seating": "yes",
+        "phone": "+44 1223 464550",
+        "website": "https://laraza.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302369259,
+      "lat": 52.2050254,
+      "lon": 0.1180612,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "CB2 3PQ",
+        "addr:street": "St Mary's Passage",
+        "amenity": "cafe",
+        "fhrs:id": "1473373",
+        "name": "The Senate",
+        "opening_hours": "Mo-Su 12:00-20:00",
+        "outdoor_seating": "yes",
+        "wifi": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302382281,
+      "lat": 52.1984919,
+      "lon": 0.1220538,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "4",
+        "addr:postcode": "CB2 1QA",
+        "addr:street": "Trumpington Street",
+        "amenity": "cafe",
+        "fhrs:id": "1472605",
+        "name": "Hot Numbers",
+        "opening_hours": "Mo-Su 07:00-18:00",
+        "outdoor_seating": "yes",
+        "panoramax": "669d01c7-9a4e-4dd7-8a49-1f3671bf8e1c",
+        "ref": "E042",
+        "website": "https://hotnumberscoffee.co.uk/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302384221,
+      "lat": 52.2023729,
+      "lon": 0.1191769,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "13",
+        "addr:postcode": "CB2 3QY",
+        "addr:street": "Pembroke Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2023-05-09",
+        "cuisine": "german",
+        "fhrs:id": "1473217",
+        "name": "Trockel Ulmann & Freunde",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 302384491,
+      "lat": 52.2022402,
+      "lon": 0.1180887,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "CB2 3RD",
+        "addr:street": "Botolph Lane",
+        "amenity": "cafe",
+        "fhrs:id": "1472658",
+        "name": "Espresso Lane",
+        "opening_hours": "Mo-Fr 08:30-16:30; Sa 08:30-17:30",
+        "outdoor_seating": "yes",
+        "phone": "+44 7946 640113",
+        "website": "https://www.espressolane.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 306484394,
+      "lat": 52.2086249,
+      "lon": 0.1186636,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "16",
+        "addr:postcode": "CB5 8AD",
+        "addr:street": "Round Church Street",
+        "amenity": "cafe",
+        "cuisine": "sandwich",
+        "fhrs:id": "1472646",
+        "internet_access": "wlan",
+        "name": "Bould Brothers Coffee",
+        "source": "survey;local knowledge",
+        "website": "https://bouldbrotherscoffee.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 306490338,
+      "lat": 52.2149312,
+      "lon": 0.1255575,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "6",
+        "addr:postcode": "CB4 1JY",
+        "addr:street": "Milton Road",
+        "amenity": "cafe",
+        "cuisine": "sandwich",
+        "fhrs:id": "1472585",
+        "name": "Café Bread & Butter",
+        "opening_hours": "Mo-Fr 07:00-16:00; Sa-Su 08:00-15:00",
+        "phone": "+44 1223 508818",
+        "source:addr": "FHRS Open Data",
+        "source:name": "survey",
+        "source:phone": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307387515,
+      "lat": 52.2043922,
+      "lon": 0.1233432,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "3",
+        "addr:postcode": "CB1 1NE",
+        "addr:street": "Emmanuel Street",
+        "amenity": "cafe",
+        "fhrs:id": "1473288",
+        "name": "Savino's",
+        "opening_hours": "Mo-Sa 07:00-18:00; Su,PH off",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307448555,
+      "lat": 52.1981145,
+      "lon": 0.1424897,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "164",
+        "addr:postcode": "CB1 3LP",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "cuisine": "bakery;cake",
+        "fhrs:id": "1472563",
+        "name": "Bravo Cafe and Patisserie",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307450112,
+      "lat": 52.1980049,
+      "lon": 0.1436325,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "9",
+        "addr:parentstreet": "Mill Road",
+        "addr:postcode": "CB1 3AH",
+        "addr:street": "The Broadway",
+        "amenity": "cafe",
+        "fhrs:id": "1473766",
+        "name": "Urban Larder",
+        "opening_hours": "Tu-Fr 08:00-16:00; Sa,Su 08:00-17:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.urbanlarder.coffee/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307451735,
+      "lat": 52.1978305,
+      "lon": 0.1434575,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "182",
+        "addr:postcode": "CB1 3LP",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "email": "info@gnest.co.uk",
+        "fhrs:id": "1473069",
+        "name": "Green Nest",
+        "old_name": "Harvest Cambridge",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-20:00",
+        "shop": "convenience",
+        "website": "https://gnest.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307458935,
+      "lat": 52.1973852,
+      "lon": 0.1451929,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "224",
+        "addr:postcode": "CB1 3NF",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "cuisine": "chinese;oriental_fusion;dim_sum",
+        "fhrs:id": "1712189",
+        "name": "Liutaio",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307478300,
+      "lat": 52.2145045,
+      "lon": 0.1270427,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "60",
+        "addr:postcode": "CB4 1EP",
+        "addr:street": "Chesterton Road",
+        "amenity": "cafe",
+        "cuisine": "thai;spanish",
+        "fhrs:id": "1740566",
+        "name": "Cafe Culture Cambridge",
+        "opening_hours": "Tu-Th 11:00-15:00; Fr-Sa 11:00-15:00,17:00-21:00; Su,Mo off",
+        "outdoor_seating": "yes",
+        "phone": "+44 7873 601202",
+        "takeaway": "yes",
+        "website": "https://www.cafeculturecambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307478303,
+      "lat": 52.2145943,
+      "lon": 0.127414,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "70",
+        "addr:postcode": "CB4 1EP",
+        "addr:street": "Chesterton Road",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-09-11",
+        "cuisine": "international",
+        "fhrs:id": "1473279",
+        "internet_access": "no",
+        "name": "Tishka",
+        "opening_hours": "Mo-Fr 07:30-15:00; Sa 08:00-14:00; Su off",
+        "phone": "+44 1223 363619",
+        "smoking": "no",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 307757399,
+      "lat": 52.2200795,
+      "lon": 0.1331341,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "121",
+        "addr:postcode": "CB4 1XE",
+        "addr:street": "Milton Road",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/bestincambridge/",
+        "cuisine": "coffee_shop;sandwich",
+        "fhrs:id": "1473778",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "121 Café",
+        "opening_hours": "Mo-Fr 07:00-16:30; Sa 08:00-16:30; Su 09:00-15:30",
+        "outdoor_seating": "yes",
+        "source": "survey;local knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 392450365,
+      "lat": 52.2316614,
+      "lon": 0.1514043,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housename": "Orwell Furlong",
+        "addr:housenumber": "2",
+        "addr:postcode": "CB4 0WY",
+        "addr:street": "Cowley Road",
+        "amenity": "cafe",
+        "cuisine": "sandwich",
+        "fhrs:id": "1472766",
+        "name": "Thoroughbreads",
+        "opening_hours": "Mo-Fr 07:30-14:30",
+        "website": "https://www.thoroughbreads.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 417080191,
+      "lat": 42.364771,
+      "lon": -71.1057705,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "286",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Franklin Street",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "Andala Coffee House",
+        "opening_hours": "Mo-Fr 09:00-23:00, Sa-Su 08:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 945 2212",
+        "website": "https://www.andalacoffee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 428987595,
+      "lat": 43.4312508,
+      "lon": -80.3106298,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:street": "Queen Street East",
+        "amenity": "cafe",
+        "name": "Java Garden"
+      }
+    },
+    {
+      "type": "node",
+      "id": 441291604,
+      "lat": 42.3602168,
+      "lon": -71.102461,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "70",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Pacific Street",
+        "amenity": "cafe",
+        "check_date": "2024-09-01",
+        "name": "Pacific Street Cafe",
+        "opening_hours": "Mo-Fr 07:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 460211002,
+      "lat": 42.374856,
+      "lon": -71.1503006,
+      "tags": {
+        "addr:city": "Belmont",
+        "addr:housenumber": "1",
+        "addr:street": "Belmont Street",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "check_date": "2025-06-01",
+        "cuisine": "tea;turkish;breakfast;bagel;coffee_shop;local",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Sofra Bakery & Cafe",
+        "opening_hours": "08:00-17:00",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1 617 661 3161",
+        "smoking": "no",
+        "toilets": "yes",
+        "toilets:female": "yes",
+        "toilets:male": "yes",
+        "toilets:unisex": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.sofrabakery.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 470931043,
+      "lat": 52.205983,
+      "lon": 0.1181985,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB2 1SU",
+        "addr:street": "Trinity Street",
+        "amenity": "cafe",
+        "check_date": "2025-08-26",
+        "check_date:opening_hours": "2025-08-26",
+        "fhrs:id": "1473194",
+        "name": "Michaelhouse Cafe",
+        "opening_hours": "Tu-Sa 09:00-17:00; Su 12:00-16:00",
+        "outdoor_seating": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 499098848,
+      "lat": 52.205118,
+      "lon": 0.1228798,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "6",
+        "addr:postcode": "CB1 1NP",
+        "addr:street": "Christ's Lane",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473169",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Su 07:00-20:30",
+        "outdoor_seating": "yes",
+        "source": "local_knowledge",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.co.uk/store-locator/27629-248273/cambridge-christs-lane"
+      }
+    },
+    {
+      "type": "node",
+      "id": 540585643,
+      "lat": 43.3885548,
+      "lon": -80.3212033,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Country Style",
+        "brand:wikidata": "Q5177435",
+        "brand:wikipedia": "en:Country Style",
+        "cuisine": "coffee_shop",
+        "name": "Country Style",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 564531110,
+      "lat": 42.3633623,
+      "lon": -71.1006465,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "424",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "name": "Mariposa Bakery",
+        "opening_hours": "Tu-Fr 08:00-15:00; Sa 08:00-16:00; Su 09:00-15:00",
+        "phone": "+1 617 876 6500",
+        "website": "https://www.mariposabakery.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 572615677,
+      "lat": 42.388668,
+      "lon": -71.142442,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "222",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Alewife Brook Parkway",
+        "amenity": "cafe",
+        "branch": "Cambridge, Fresh Pond",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cost:coffee": "$1.75",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 617-876-1070",
+        "ref": "14891",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/14891/cambridge-fresh-pond-222-alewife-brook-parkway-cambridge-ma-021381102-u"
+      }
+    },
+    {
+      "type": "node",
+      "id": 599038481,
+      "lat": 52.2049782,
+      "lon": 0.1446257,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "7C",
+        "addr:parentstreet": "Coldhams Lane",
+        "addr:place": "Beehive Centre",
+        "addr:postcode": "CB1 3ET",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473200",
+        "name": "Costa",
+        "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-20:00; Su 08:00-18:00",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 620752037,
+      "lat": 52.1864453,
+      "lon": 0.1185318,
+      "tags": {
+        "access": "yes",
+        "addr:city": "Cambridge",
+        "addr:housenumber": "19",
+        "addr:postcode": "CB2 8FA",
+        "addr:street": "Trumpington Road",
+        "amenity": "cafe",
+        "fhrs:id": "506511",
+        "name": "Lakeside Coffee Shop",
+        "note:access": "As in it doesn't matter if you're using the golf course or not",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 636875290,
+      "lat": 52.2088707,
+      "lon": 0.0900791,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB3 0GT",
+        "amenity": "cafe",
+        "brand": "Boutique Espresso",
+        "name": "West Café",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "operator": "University of Cambridge",
+        "phone": "+44 1223 366700",
+        "ref": "W053.1",
+        "source:opening_hours": "http://www.unicen.cam.ac.uk/food-and-drink/places-eat/out-university-centre/west-cafe",
+        "source:phone": "http://www.unicen.cam.ac.uk/food-and-drink/places-eat/out-university-centre/west-cafe",
+        "website": "http://www.unicen.cam.ac.uk/food-and-drink/places-eat/out-university-centre/west-cafe",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 685694361,
+      "lat": 43.4233512,
+      "lon": -80.2861524,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "british",
+        "name": "British Bakery & Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 779614705,
+      "lat": 52.2015564,
+      "lon": 0.1254673,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "33",
+        "addr:postcode": "CB2 1AB",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-04-13",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "fhrs:id": "1489585",
+        "name": "Urban Butterfly",
+        "opening_hours:signed": "no",
+        "website": "https://www.urbanbutterfly.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 781636063,
+      "lat": 52.2045534,
+      "lon": 0.1182519,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "8",
+        "addr:postcode": "CB2 3PJ",
+        "addr:street": "St Edward's Passage",
+        "amenity": "cafe",
+        "cost:tea": "1.10 GBP",
+        "fhrs:id": "1473372",
+        "last_survey": "July 2010",
+        "name": "Indigo Coffee House",
+        "opening_hours": "Mo-Fr 10:00-18:00, Sa 09:00-18:00, Su 10:00-17:00",
+        "source": "survey",
+        "source:addr": "facebook;local_knowledge",
+        "source:name": "survey",
+        "source:opening_hours": "publication (July 2010)",
+        "toilets": "yes"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 847875743,
+      "lat": 52.2065498,
+      "lon": 0.1203119,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "54",
+        "addr:postcode": "CB2 3HX",
+        "addr:street": "Sidney Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-05-16",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1534390",
+        "name": "Real Eating Co.",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 884632644,
+      "lat": 52.2172252,
+      "lon": 0.1382517,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "39",
+        "addr:postcode": "CB4 1NQ",
+        "addr:street": "High Street",
+        "amenity": "cafe",
+        "fhrs:id": "1472809",
+        "name": "Barbarella",
+        "opening_hours": "Mo-Su 09:00-17:00",
+        "website": "https://www.barbarellacafe.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 984957223,
+      "lat": 42.3665431,
+      "lon": -71.1053039,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "757",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2023-05-07",
+        "cost:coffee": "$2.10",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "name": "1369 Coffee House",
+        "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-16:00; Nov Th[4] off; Dec 25 off",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 576 4600",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.1369coffeehouse.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1117527186,
+      "lat": 52.2143118,
+      "lon": 0.1261656,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "38",
+        "addr:postcode": "CB4 1EN",
+        "addr:street": "Chesterton Road",
+        "amenity": "cafe",
+        "contact:facebook": "cofeincambridge",
+        "contact:instagram": "cofe_in_cambridge",
+        "contact:website": "https://cofeincambridge.com",
+        "fhrs:id": "1787567",
+        "name": "Cofein",
+        "opening_hours": "Mo-Fr 07:00-16:00; Sa 08:30-17:00; Su 08:30-17:00"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 1195371240,
+      "lat": 52.2140378,
+      "lon": 0.1255742,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "8-10",
+        "addr:postcode": "CB4 1EH",
+        "addr:street": "Victoria Avenue",
+        "amenity": "cafe",
+        "fhrs:id": "1712190",
+        "name": "Ellimatta",
+        "opening_hours": "We-Fr 08:30-15:00, Sa 21:00-15:00 \"winter hours\""
+      }
+    },
+    {
+      "type": "node",
+      "id": 1291053958,
+      "lat": 43.3588198,
+      "lon": -80.3166773,
+      "tags": {
+        "addr:housenumber": "18",
+        "addr:postcode": "N1S 1H3",
+        "addr:street": "Queens Square",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Grand Cafe",
+        "outdoor_seating": "yes",
+        "phone": "+1-519-624-8363",
+        "website": "https://www.grandcafe.ca/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1437162941,
+      "lat": 42.3737722,
+      "lon": -71.1003885,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1369",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Cambridge Street",
+        "amenity": "cafe",
+        "check_date": "2024-08-22",
+        "contact:instagram": "1369coffeehouse",
+        "cuisine": "coffee_shop",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "1369 Coffee House",
+        "opening_hours": "Mo-Fr 07:00-15:00; Sa-Su 08:00-16:00",
+        "outdoor_seating": "no",
+        "phone": "+1-617-576-1369",
+        "smoking": "no",
+        "website": "https://www.1369coffeehouse.com",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1465086700,
+      "lat": 52.1976513,
+      "lon": 0.1441574,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "198",
+        "addr:postcode": "CB1 3NF",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-08-22",
+        "fhrs:id": "1472479",
+        "name": "Cafe Blue Sage",
+        "opening_hours": "Mo,We-Fr 10:00-15:00; Sa,Su 10:00-16:00",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1477969656,
+      "lat": 52.2000844,
+      "lon": 0.1384424,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "Dales Brewery",
+        "addr:housenumber": "Unit 5-6",
+        "addr:postcode": "CB1 2LJ",
+        "addr:street": "Gwydir Street",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;craft_beer",
+        "diet:vegetarian": "yes",
+        "fhrs:id": "1472553",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Hot Numbers",
+        "opening_hours": "Mo-We 07:30-18:00; Th-Fr 07:30-22:30; Sa 07:30-18:00; Su 08:00-21:00",
+        "outdoor_seating": "no",
+        "toilets:wheelchair": "no",
+        "website": "https://hotnumberscoffee.co.uk/",
+        "wheelchair": "yes",
+        "wheelchair:description": "4 inch step from street level but wheelchair ramp kept by the door"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1509938534,
+      "lat": 52.2073184,
+      "lon": 0.1236277,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "54",
+        "addr:postcode": "CB1 1LN",
+        "addr:street": "King Street",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/thelockercafe/",
+        "fhrs:id": "1632473",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "The Locker",
+        "old_fhrs:id": "506880",
+        "opening_hours": "Mo-Fr 08:30-17:30; Sa 09:30-17:30; Su 10:00-16:00",
+        "phone": "+44 7566 216042",
+        "source:addr": "FHRS Open Data",
+        "website": "https://thelockercafe.co.uk/",
+        "wikidata": "Q26419158"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1526684632,
+      "lat": 52.180868,
+      "lon": 0.1519652,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "132",
+        "addr:postcode": "CB1 8QJ",
+        "addr:street": "Wulfstan Way",
+        "amenity": "cafe",
+        "check_date": "2025-07-17",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472596",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "The Coffee House",
+        "opening_hours": "Mo-Fr 08:00-16:00; Sa 09:00-14:00",
+        "outdoor_seating": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+44 1223 660665",
+        "website": "http://coffeehousecambridge.weebly.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1529017265,
+      "lat": 52.1875182,
+      "lon": 0.1469764,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "204",
+        "addr:postcode": "CB1 7AW",
+        "addr:street": "Cherry Hinton Road",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;italian",
+        "fhrs:id": "1473622",
+        "name": "Balzano's",
+        "opening_hours": "Mo-Fr 08:30-17:30; Sa 08:30-16:00",
+        "outdoor_seating": "yes",
+        "phone": "+44 1223 511929",
+        "shop": "deli",
+        "website": "http://balzanos.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1547870314,
+      "lat": 42.3837165,
+      "lon": -71.1340565,
+      "tags": {
+        "addr:housenumber": "294",
+        "addr:street": "Concord Ave",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-09-21",
+        "name": "Concord Ave Cafe",
+        "opening_hours": "Tu-Fr 09:30-18:30; Sa 11:00-16:00",
+        "website": "https://concordavenuecafe.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1573017508,
+      "lat": 52.199538,
+      "lon": 0.1576245,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "Sainsbury's",
+        "addr:postcode": "CB1 3HP",
+        "addr:street": "Brooks Road",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473939",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1031816/coldhams-lane-sainsburys-brooks-rd-cambridge-cambridge-eng-cb-1-3-hp-gb",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1594787970,
+      "lat": 52.2065837,
+      "lon": 0.1316088,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "75",
+        "addr:postcode": "CB1 1DF",
+        "addr:street": "Burleigh Street",
+        "amenity": "cafe",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "opening_hours": "Mo-Su 07:00-18:30",
+        "website": "https://www.starbucks.co.uk/store-locator/27640-248267/cambridge-burleigh-street-7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1606777853,
+      "lat": 52.2072445,
+      "lon": 0.1250311,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "82",
+        "addr:postcode": "CB1 1LN",
+        "addr:street": "King Street",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;pastry;dessert",
+        "fhrs:id": "1764579",
+        "name": "The Cherry Pit",
+        "old_name": "Barton Bicycles",
+        "opening_hours": "Tu-Sa 09:30-16:30",
+        "source:addr": "interpolation",
+        "website": "https://www.thecherrypit.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1616855180,
+      "lat": 52.200941,
+      "lon": 0.1085335,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB3 9DB",
+        "addr:street": "Sidgwick Avenue",
+        "amenity": "cafe",
+        "fhrs:id": "506448",
+        "name": "Sidgwick Buttery",
+        "operator": "University of Cambridge",
+        "ref": "S012.4"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1616855188,
+      "lat": 52.2022517,
+      "lon": 0.1091522,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "7",
+        "addr:postcode": "CB3 9DP",
+        "addr:street": "West Road",
+        "amenity": "cafe",
+        "fhrs:id": "1626040",
+        "name": "The Arc",
+        "operator": "University of Cambridge",
+        "ref": "S044.1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1618950672,
+      "lat": 52.204547,
+      "lon": 0.122834,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "62",
+        "addr:postcode": "CB2 3BZ",
+        "addr:street": "St Andrew's Street",
+        "amenity": "cafe",
+        "cuisine": "pizza",
+        "fhrs:id": "1473202",
+        "name": "Milano",
+        "note": "Local food shop and cafe.",
+        "opening_hours": "Mo-Sa 09:00-21:00; Su 10:00-19:00",
+        "outdoor_seating": "yes",
+        "phone": "+44 1223 366544",
+        "shop": "food",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1643339181,
+      "lat": 52.1740129,
+      "lon": 0.1376258,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "name": "Costa",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1643339187,
+      "lat": 52.1749501,
+      "lon": 0.1410201,
+      "tags": {
+        "amenity": "cafe",
+        "name": "WRVS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1816988564,
+      "lat": 42.3775378,
+      "lon": -71.1153803,
+      "tags": {
+        "addr:city": "Cambridge",
+        "amenity": "cafe",
+        "name": "Bauer Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1821924122,
+      "lat": 52.2066353,
+      "lon": 0.130376,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "22",
+        "addr:postcode": "CB1 1EW",
+        "addr:street": "Fitzroy Street",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "brand:wikipedia": "en:Caffè Nero",
+        "check_date": "2024-08-22",
+        "check_date:opening_hours": "2024-08-22",
+        "cuisine": "coffee_shop",
+        "dog": "outside",
+        "fhrs:id": "1473203",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "internet_access:ssid": "_The Cloud",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Fr 07:30-18:00; Sa 07:30-18:30; Su 08:30-18:00",
+        "outdoor_seating": "yes",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "no",
+        "phone": "+44 1223 359656",
+        "service:electricity": "limited",
+        "takeaway": "yes",
+        "website": "https://www.caffenero.com/uk/stores/cambridge-fitzroy-st",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1848708197,
+      "lat": 52.2115969,
+      "lon": 0.1440666,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB5 8LD",
+        "addr:street": "Cheddar's Lane",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473721",
+        "name": "Costa",
+        "opening_hours": "Su 10:30-16:30; Mo-Fr 07:30-18:30; Sa 07:30-19:00",
+        "takeaway": "yes",
+        "wheelchair": "yes",
+        "wifi": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1884055322,
+      "lat": 42.3617308,
+      "lon": -71.0900125,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-03-25",
+        "name": "Forbes Family Cafe",
+        "opening_hours": "Mo-Fr 11:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1884056372,
+      "lat": 42.3591037,
+      "lon": -71.0930385,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-07-07",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "name": "Bosworth's Cafe",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1907895893,
+      "lat": 42.3638468,
+      "lon": -71.0878195,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "120",
+        "addr:postcode": "02142",
+        "addr:state": "MA",
+        "addr:street": "Broadway",
+        "addr:unit": "6",
+        "amenity": "cafe",
+        "branch": "Kendall Square",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2025-06-11",
+        "check_date:opening_hours": "2025-06-11",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 04:30-21:00; Sa,Su 05:00-20:30",
+        "outdoor_seating": "yes",
+        "phone": "+1 617-577-7511",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/12566/kendall-square-120-broadway-6-cambridge-center-cambridge-ma-02142",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1914291499,
+      "lat": 42.3649355,
+      "lon": -71.0826912,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "318",
+        "addr:postcode": "02142",
+        "addr:state": "MA",
+        "addr:street": "Third Street",
+        "amenity": "cafe",
+        "check_date": "2025-07-09",
+        "check_date:opening_hours": "2025-07-09",
+        "cuisine": "bakery",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Tatte Bakery and Café",
+        "opening_hours": "Mo-Sa 07:00-20:00; Su 08:00-19:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 354 4200",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2021286688,
+      "lat": 52.2066015,
+      "lon": 0.118779,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "17",
+        "addr:postcode": "CB2 3JU",
+        "addr:street": "Green Street",
+        "amenity": "cafe",
+        "fhrs:id": "513926",
+        "name": "Harriets Café Tearooms",
+        "opening_hours": "Mo-Fr 08:45-18:00; Sa 08:30-18:00; Su 09:30-17:00",
+        "source": "survey",
+        "website": "https://harrietscafetearooms.co.uk/our-tearooms/cambridge-city-centre-tearooms/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2026671456,
+      "lat": 52.200064,
+      "lon": 0.1264709,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "88",
+        "addr:postcode": "CB2 1DP",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "fhrs:id": "1473666",
+        "name": "Bould Brothers Coffee",
+        "opening_hours": "Mo-Su 08:00-17:00",
+        "website": "https://bouldbrotherscoffee.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2026702357,
+      "lat": 52.2008334,
+      "lon": 0.1257614,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "58",
+        "addr:postcode": "CB2 1DP",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "cafe": "board_game",
+        "contact:phone": "+44 1223 662266",
+        "contact:website": "https://theboxroombgc.co.uk/",
+        "fhrs:id": "1749508",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "The Box Room Board Game Cafe",
+        "opening_hours": "Mo-Th 12:00-22:00; Fr-Sa 12:00-22:30; Su 12:00-21:30",
+        "outdoor_seating": "no",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2028596250,
+      "lat": 52.1926832,
+      "lon": 0.1338051,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "CB1 2FF",
+        "addr:street": "Brookgate",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "name": "Costa",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2034586984,
+      "lat": 52.2095543,
+      "lon": 0.1167639,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "36",
+        "addr:postcode": "CB2 1UW",
+        "addr:street": "Bridge Street",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/fitzbillies",
+        "contact:instagram": "https://www.instagram.com/fitzbillies/",
+        "contact:tiktok": "https://www.tiktok.com/@fitzbilliescambridge",
+        "contact:twitter": "fitzbillies",
+        "email": "orders@fitzbillies.com",
+        "fhrs:id": "1472912",
+        "internet_access": "wlan",
+        "name": "Fitzbillies Bridge Street",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa-Su 08:30-18:00",
+        "phone": "+44 1223 321865",
+        "website": "https://www.fitzbillies.com/pages/bridge-street"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2038215497,
+      "lat": 52.1947147,
+      "lon": 0.1100104,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "31b",
+        "addr:postcode": "CB3 9JG",
+        "addr:street": "Eltisley Avenue",
+        "amenity": "cafe",
+        "contact:instagram": "fluxbymarsi",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1800134",
+        "name": "Flux Coffee",
+        "opening_hours": "Th-Mo 08:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2052643524,
+      "lat": 52.2041046,
+      "lon": 0.1227875,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "19-20",
+        "addr:postcode": "CB2 3AX",
+        "addr:street": "St Andrew's Street",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "brand:wikipedia": "en:Caffè Nero",
+        "check_date": "2024-08-22",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473087",
+        "indoor_seating": "yes",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Fr 07:00-19:30; Sa 07:30-19:30; Su 08:00-19:00",
+        "outdoor_seating": "no",
+        "source": "survey",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "website": "https://www.caffenero.com/uk/stores/cambridge-grand-arcade"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2052661951,
+      "lat": 52.2046072,
+      "lon": 0.1223097,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "8",
+        "addr:postcode": "CB2 3AX",
+        "addr:street": "St Andrew's Street",
+        "amenity": "cafe",
+        "brand": "Xing Fu Tang",
+        "brand:en": "Xing Fu Tang",
+        "brand:wikidata": "Q95720330",
+        "brand:zh": "幸福堂",
+        "check_date": "2025-08-03",
+        "check_date:opening_hours": "2025-08-03",
+        "cuisine": "bubble_tea",
+        "fhrs:id": "1545268",
+        "name": "Xing Fu Tang",
+        "name:en": "Xing Fu Tang",
+        "name:zh": "幸福堂",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "source": "survey",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2377969456,
+      "lat": 52.2052801,
+      "lon": 0.121244,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "18-19",
+        "addr:postcode": "CB2 3NE",
+        "addr:street": "Petty Cury",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-05-29",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473902",
+        "level": "0",
+        "name": "Coffee by Real Eating Co",
+        "not:addr:postcode": "CB2 3NA",
+        "opening_hours:signed": "no",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2377969457,
+      "lat": 52.2052505,
+      "lon": 0.1211086,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "17-18",
+        "addr:postcode": "CB2 3NE",
+        "addr:street": "Petty Cury",
+        "amenity": "cafe",
+        "fhrs:id": "1473910",
+        "level": "0",
+        "name": "Kineya Mugimaru",
+        "opening_hours": "Mo-Sa 10:30-21:00; Su 10:30-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2382422543,
+      "lat": 52.2067766,
+      "lon": 0.1201214,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "50",
+        "addr:postcode": "CB2 3HX",
+        "addr:street": "Sidney Street",
+        "alt_name": "T4 Tea House",
+        "amenity": "cafe",
+        "brand": "T4",
+        "brand:wikidata": "Q112123535",
+        "cuisine": "bubble_tea",
+        "fhrs:id": "1473986",
+        "name": "T4 Tea For U",
+        "opening_hours": "Fr,Sa 10:30-22:00; Su-Th 10:30-21:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2382470226,
+      "lat": 52.2058313,
+      "lon": 0.1191933,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "14",
+        "addr:postcode": "CB2 3NJ",
+        "addr:street": "Market Hill",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "check_date:opening_hours": "2025-05-16",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473088",
+        "name": "Costa",
+        "opening_hours": "Mo-Sa 07:00-20:00; Su 08:00-19:00",
+        "operator": "Costa",
+        "source": "survey",
+        "source:addr:postcode": "code-point_open",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2384354589,
+      "lat": 52.2082006,
+      "lon": 0.118925,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "8",
+        "addr:postcode": "CB2 1UA",
+        "addr:street": "Bridge Street",
+        "amenity": "cafe",
+        "cuisine": "donut",
+        "fhrs:id": "1745320",
+        "name": "Crosstown Doughnuts",
+        "opening_hours": "Mo-Th 09:00-18:00; Fr,Sa 09:00-20:00; Su 10:00-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2384364522,
+      "lat": 52.2082501,
+      "lon": 0.1186247,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "66",
+        "addr:postcode": "CB2 1UR",
+        "addr:street": "Bridge Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2022-10-05",
+        "fhrs:id": "1472832",
+        "indoor_seating": "yes",
+        "name": "Crêpeaffaire",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "website": "https://www.crepeaffaire.com/locations/2017/cambridge",
+        "wikidata": "Q26419201"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2400716625,
+      "lat": 52.2045475,
+      "lon": 0.1358934,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "47",
+        "addr:postcode": "CB1 2LD",
+        "addr:street": "Norfolk Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-06-23",
+        "fhrs:id": "1473526",
+        "name": "The Box",
+        "opening_hours": "Mo-Th 08:00-17:00; Fr 08:00-20:00; Sa 10:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2449738479,
+      "lat": 42.361035,
+      "lon": -71.096684,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "190",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-03-27",
+        "cuisine": "sandwich",
+        "drive_through": "no",
+        "indoor_seating": "yes",
+        "internet_access": "yes",
+        "name": "Flour Bakery + Cafe",
+        "opening_hours": "Sa,Su 08:00-18:00; Mo-Fr 07:00-19:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 617 225 2525",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://flourbakery.com/"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 2718727930,
+      "lat": -42.8335143,
+      "lon": 147.4672773,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Red Square Cafe",
+        "name:en": "Red Square Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2769372691,
+      "lat": 52.2070478,
+      "lon": 0.1214692,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "42",
+        "addr:postcode": "CB1 1NL",
+        "addr:street": "Hobson Street",
+        "amenity": "cafe",
+        "fhrs:id": "1472666",
+        "name": "Cafe @Abantu",
+        "old_name": "Sticky Beaks",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2790754652,
+      "lat": 42.3622063,
+      "lon": -71.0812983,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "101",
+        "addr:postcode": "02142",
+        "addr:state": "MA",
+        "addr:street": "Main Street",
+        "alt_name": "Tatte Bakery & Cafe;Tatte",
+        "amenity": "cafe",
+        "name": "Tatte Bakery and Cafe",
+        "opening_hours": "Mo-Fr 07:00-15:00",
+        "phone": "+1-617-577-1111",
+        "start_date": "2013",
+        "website": "https://tattebakery.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2800159462,
+      "lat": 43.3584854,
+      "lon": -80.3164306,
+      "tags": {
+        "addr:housenumber": "7",
+        "addr:postcode": "N1S 2H4",
+        "addr:street": "Melville Street South",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "bar": "no",
+        "cuisine": "pizza;coffee;sandwich",
+        "drive_through": "no",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Melville Cafe",
+        "outdoor_seating": "yes",
+        "phone": "+1-519-624-3984",
+        "website": "https://www.melvillecafe.ca/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2819172974,
+      "lat": 42.3712072,
+      "lon": -71.1145182,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1154",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/zinnekens-belgian-waffles-harvard-square-cambridge",
+        "cuisine": "waffle",
+        "email": "harvard@zinnekens.com",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Zinneken's",
+        "opening_hours": "Mo-Fr 11:00-23:00; Sa 10:00-23:00; Su 10:00-21:00",
+        "phone": "+1 (617) 876-0836",
+        "website": "http://zinnekenswaffles.com/harvard-square/",
+        "website:menu": "http://zinnekenswaffles.com/harvard-square-menu/",
+        "wheelchair": "no"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 2908119874,
+      "lat": 42.3630323,
+      "lon": -71.0856665,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Fr 06:00-18:00; Sa 07:00-18:00; Su 07:00-16:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2946610386,
+      "lat": 52.2042041,
+      "lon": 0.1187789,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1-2",
+        "addr:postcode": "CB2 3QN",
+        "addr:street": "Bene't Street",
+        "amenity": "cafe",
+        "cuisine": "sicilian",
+        "fhrs:id": "1473649",
+        "name": "Aromi",
+        "outdoor_seating": "no",
+        "website": "https://www.aromi.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3010280539,
+      "lat": 42.3689611,
+      "lon": -71.1136071,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "31",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Putnam Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-08-18",
+        "contact:instagram": "https://www.instagram.com/circuscoopcafe",
+        "cuisine": "sandwich;coffee_shop",
+        "internet_access": "wlan",
+        "name": "Circus Cooperative Cafe",
+        "opening_hours": "08:00-15:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-945-7437",
+        "smoking": "no",
+        "toilets": "yes",
+        "website": "https://www.circus.coop/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3160999702,
+      "lat": 52.2175465,
+      "lon": 0.1216322,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:place": "Chesterton Sports Centre",
+        "addr:postcode": "CB4 3NY",
+        "amenity": "cafe",
+        "building:levels": "1",
+        "fhrs:id": "506560",
+        "layer": "1",
+        "name": "Box Café",
+        "not:addr:postcode": "CB4 5NY",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3276831510,
+      "lat": 52.2055085,
+      "lon": 0.1334449,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "44-45",
+        "addr:postcode": "CB1 1DJ",
+        "addr:street": "Burleigh Street",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/CharliesCoffeeCo",
+        "cuisine": "pizza",
+        "fhrs:id": "1589515",
+        "name": "Giovanni’s Caffe & Pizzeria",
+        "opening_hours": "Mo-We 09:00-20:00; Th-Sa 09:00-22:00; PH closed; Su 09:00-17:00",
+        "source:addr": "FHRS Open Data",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3516592381,
+      "lat": 42.3819235,
+      "lon": -71.1199347,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1662",
+        "addr:postcode": "02138-2706",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "branch": "Shepard Post",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2025-08-05",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "lgbtq": "welcome",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "06:00-21:00",
+        "outdoor_seating": "no",
+        "phone": "+1 617-491-0442",
+        "smoking": "no",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/12254/shepard-post-1662-massachusetts-ave-cambridge-ma-021381838-us"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3525965394,
+      "lat": 52.1891413,
+      "lon": 0.1367557,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "6",
+        "addr:postcode": "CB1 7AA",
+        "addr:street": "Cherry Hinton Road",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472624",
+        "name": "Costa",
+        "opening_hours": "Mo-Fr 07:00-19:30; Sa 08:00-19:00; Su 08:30-18:00",
+        "outdoor_seating": "pedestrian_zone",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3543219062,
+      "lat": 52.1971018,
+      "lon": 0.1465595,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "260",
+        "addr:postcode": "CB1 3NF",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "fhrs:id": "1473534",
+        "name": "Relevant Record Café",
+        "opening_hours": "Mo-We 08:00-18:00; Th-Sa 08:00-22:00; Su 09:00-17:00",
+        "phone": "+44 1223 244 684",
+        "shop": "music",
+        "source": "Mapillary;Food Hygiene Open Data;survey",
+        "source:addr": "FHRS Open Data",
+        "website": "https://www.relevantrecordcafe.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3787436559,
+      "lat": 52.2040291,
+      "lon": 0.121726,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "Kiosk 5",
+        "addr:postcode": "CB2 3BJ",
+        "addr:street": "Grand Arcade",
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473176",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Costa",
+        "opening_hours": "Mo-Fr 07:00-20:00; Sa 07:00-19:00; Su 08:00-18:00",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3787436565,
+      "lat": 52.2041103,
+      "lon": 0.1226574,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "2",
+        "addr:postcode": "CB2 3BJ",
+        "addr:street": "Grand Arcade",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "fhrs:id": "1615493",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Bubbleology",
+        "opening_hours": "Mo-Th 09:00-20:00; Fr,Sa 09:00-21:00; Su 10:00-19:00",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3787608445,
+      "lat": 52.204594,
+      "lon": 0.1210745,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "43",
+        "addr:postcode": "CB2 3NA",
+        "addr:street": "Lion Yard",
+        "amenity": "cafe",
+        "brand": "Hotel Chocolat",
+        "brand:wikidata": "Q5911369",
+        "brand:wikipedia": "en:Hotel Chocolat",
+        "fhrs:id": "1472892",
+        "level": "0",
+        "name": "Hotel Chocolat",
+        "shop": "confectionery",
+        "website": "https://www.hotelchocolat.com/uk/chocolate-shops/cambridge.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3838098988,
+      "lat": 52.197473,
+      "lon": 0.1457212,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "St Phillips Church",
+        "addr:housenumber": "185",
+        "addr:postcode": "CB1 3AN",
+        "addr:street": "Mill Road",
+        "alt_name": "Cornerstone Cafe",
+        "amenity": "cafe",
+        "fhrs:id": "1473457",
+        "name": "Cambridge Churches Homeless Project"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3883305723,
+      "lat": 52.1882662,
+      "lon": 0.1359106,
+      "tags": {
+        "access": "private",
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB2 8PE",
+        "addr:street": "Hills Road",
+        "amenity": "cafe",
+        "name": "The Hub",
+        "note": "Student facility only",
+        "opening_hours": "Mo-Fr",
+        "student": "designated"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3895613425,
+      "lat": 52.1868056,
+      "lon": 0.1334234,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB2 8EB",
+        "amenity": "cafe",
+        "name": "National Extension College Cafe"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 4075302748,
+      "lat": 52.2006833,
+      "lon": 0.126313,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "67-69",
+        "addr:postcode": "CB2 1AB",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "In Chá"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4075302754,
+      "lat": 52.200155,
+      "lon": 0.1267768,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "85",
+        "addr:postcode": "CB2 1AW",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "brand": "Chatime",
+        "brand:wikidata": "Q16829306",
+        "brand:wikipedia": "en:Chatime",
+        "contact:facebook": "https://www.facebook.com/chatimecambridgecc/",
+        "cuisine": "bubble_tea",
+        "fhrs:id": "1472875",
+        "name": "Chatime",
+        "opening_hours": "Su-Th 11:30-20:30; Fr,Sa 11:00-21:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4075302757,
+      "lat": 52.2008006,
+      "lon": 0.1261916,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "63",
+        "addr:postcode": "CB2 1AB",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2024-04-13",
+        "fhrs:id": "1706239",
+        "name": "Heartea Cherry",
+        "opening_hours:signed": "no",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4172034289,
+      "lat": 45.0545304,
+      "lon": -64.6594001,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Windmill Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4192557994,
+      "lat": -42.8084046,
+      "lon": 147.4278239,
+      "tags": {
+        "addr:housenumber": "699",
+        "addr:postcode": "7170",
+        "addr:state": "TAS",
+        "addr:street": "Richmond Road",
+        "addr:suburb": "Cambridge",
+        "amenity": "cafe",
+        "name": "Frogmore Creek Wines",
+        "opening_hours": "We-Mo 10:00-17:00 open \"Cellar Door\" || We-Mo 11:30-1:00 open \"Restaurant\"",
+        "outdoor_seating": "yes",
+        "phone": "+61 3 6274 5844",
+        "shop": "wine",
+        "toilets:wheelchair": "yes",
+        "tourism": "attraction",
+        "website": "https://www.frogmorecreek.com.au/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267292079,
+      "lat": 42.3726335,
+      "lon": -71.1206838,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Peet's Coffee",
+        "brand:wikidata": "Q1094101",
+        "check_date": "2025-09-06",
+        "cuisine": "coffee_shop",
+        "name": "Peet's Coffee",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4390663796,
+      "lat": 43.004113,
+      "lon": -89.0187592,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "214",
+        "addr:postcode": "53523",
+        "addr:state": "WI",
+        "addr:street": "West Main Street",
+        "amenity": "cafe",
+        "check_date": "2024-09-29",
+        "cuisine": "coffee_shop",
+        "name": "The Marigold Room",
+        "opening_hours": "Mo-Fr 07:00-16:00; Sa 08:00-16:00; Su 08:00-15:00",
+        "outdoor_seating": "yes",
+        "phone": "+1 608-658-7744",
+        "website": "https://themarigoldroom.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4460622928,
+      "lat": 52.194958,
+      "lon": 0.1374555,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB1 2JW",
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Chill #02",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "source": "survey",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4483943925,
+      "lat": 42.3650595,
+      "lon": -71.1027878,
+      "tags": {
+        "addr:housenumber": "589",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Caffe Nero",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Fr 06:30-21:00; Sa-Su 07:00-21:00",
+        "outdoor_seating": "no",
+        "phone": "+1 857 259 6077",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:charge": "Bottle of water",
+        "toilets:description": "Current code is 3035 (70% confident)",
+        "toilets:fee": "yes",
+        "toilets:handwashing": "yes",
+        "toilets:paper_supplied": "yes",
+        "website": "https://caffenero.com/us/en/stores/central-square/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4485279691,
+      "lat": 52.2056316,
+      "lon": 0.1080087,
+      "tags": {
+        "access": "private",
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB3 9DR",
+        "amenity": "cafe",
+        "fhrs:id": "1578018",
+        "name": "The Tea Room",
+        "opening_hours": "Mo-Fr 09:00-17:00; Sa 10:00-14:00",
+        "operator": "University of Cambridge",
+        "ref": "S/LIB022.1",
+        "source": "website;local knowledge",
+        "website": "https://www.lib.cam.ac.uk/using-library/tea-room"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4555389483,
+      "lat": 52.2192799,
+      "lon": 0.11167,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "184A",
+        "addr:postcode": "CB4 3JP",
+        "addr:street": "Histon Road",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472502",
+        "name": "Coffee Tree",
+        "opening_hours": "Mo-Fr 08:30-17:00; Sa 08:30-16:00",
+        "source:addr": "FHRS Open Data",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4574586682,
+      "lat": 52.1947322,
+      "lon": 0.1378581,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB1 2JW",
+        "amenity": "cafe",
+        "check_date": "2024-01-09",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Gourmet Coffee Bar & Kitchen",
+        "old_name": "AMT Coffee",
+        "outdoor_seating": "no",
+        "takeaway": "yes",
+        "website": "https://gourmetcoffeebar.co.uk/locations/?location=45608045"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4574586686,
+      "lat": 52.1945718,
+      "lon": 0.1366181,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "CB1 2GA",
+        "addr:street": "Station Square",
+        "addr:unit": "1",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "brand:wikipedia": "en:Caffè Nero",
+        "check_date": "2024-08-22",
+        "check_date:opening_hours": "2024-08-22",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473708",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Su 07:00-20:00",
+        "outdoor_seating": "no",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "website": "https://www.caffenero.com/uk/stores/cambridge-the-square",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4788500377,
+      "lat": 52.1862443,
+      "lon": 0.1337061,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB2 8EB",
+        "addr:street": "Purbeck Road",
+        "amenity": "cafe",
+        "name": "Cambridge Cookery School Café and Deli",
+        "outdoor_seating": "yes",
+        "phone": "+44 1223 247620",
+        "website": "https://cambridgecookery.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4888182876,
+      "lat": 42.3636621,
+      "lon": -71.100458,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "425",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "air_conditioning": "yes",
+        "alt_name": "Jaho Coffee Roaster and Wine Bar",
+        "amenity": "cafe",
+        "branch": "Cambridge, MA",
+        "check_date": "2025-02-09",
+        "colour": "black",
+        "contact:instagram": "https://instagram.com/jahocoffee",
+        "instagram": "https://instagram.com/jahocoffee",
+        "length": "1.2",
+        "level": "0",
+        "material": "metal",
+        "name": "Jaho Coffee Roaster & Wine Bar",
+        "opening_hours": "Mo-Fr 06:30-23:00",
+        "outdoor_seating": "no",
+        "seats": "4",
+        "website": "https://www.jaho.com/pages/cambridge-locations",
+        "website:menu": "https://jahocoffee.square.site/s/order?location=11ea775c1fec6816a1470cc47a2aeaec",
+        "width": "1.2"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4906573983,
+      "lat": 43.3742133,
+      "lon": -80.3181495,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "check_date": "2023-05-26",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Sa 06:00-22:00; Su 07:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-519-623-7893",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.ca/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4947474638,
+      "lat": 52.2020571,
+      "lon": 0.1158642,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "16",
+        "addr:postcode": "CB3 9EL",
+        "addr:street": "Silver Street",
+        "amenity": "cafe",
+        "cuisine": "sandwich;coffee",
+        "fhrs:id": "1472557",
+        "name": "Cafe Aristo",
+        "opening_hours": "Mo-Fr 09:00-15:00; Sa 10:00-15:00",
+        "website": "https://www.aristocaters.co.uk/silverstreet/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969325441,
+      "lat": 52.2059391,
+      "lon": 0.1330939,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "24",
+        "addr:postcode": "CB1 1DG",
+        "addr:street": "Burleigh Street",
+        "amenity": "cafe",
+        "fhrs:id": "1538568",
+        "name": "Deluna Café",
+        "opening_hours": "Mo-Sa 08:00-18:00; Su 09:00-17:00",
+        "outdoor_seating": "yes",
+        "phone": "+44 1223 778540",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969325450,
+      "lat": 52.2063776,
+      "lon": 0.1323211,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "8",
+        "addr:postcode": "CB1 1DG",
+        "addr:street": "Burleigh Street",
+        "amenity": "cafe",
+        "contact:facebook": "https://www.facebook.com/people/Cafe-Arena/100049211145537/",
+        "cuisine": "coffee_shop;breakfast",
+        "fhrs:id": "1472770",
+        "name": "Arena",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969325451,
+      "lat": 52.2063518,
+      "lon": 0.1323696,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "9",
+        "addr:postcode": "CB1 1DG",
+        "addr:street": "Burleigh Street",
+        "amenity": "cafe",
+        "check_date": "2022-10-04",
+        "contact:facebook": "https://www.facebook.com/people/Cafe-Oriental-Dumpling-Bar-%E6%A3%A7%E9%A4%83/100069198518545/",
+        "cuisine": "chinese;dumplings;breakfast",
+        "fhrs:id": "1472598",
+        "name": "Cafe Oriental",
+        "opening_hours": "Mo-Fr 11:00-21:00; Sa,Su 10:30-21:00",
+        "outdoor_seating": "yes",
+        "payment:cards": "no",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4986783438,
+      "lat": 52.1932401,
+      "lon": 0.1363633,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "21",
+        "addr:postcode": "CB1 2FP",
+        "addr:street": "Station Place",
+        "amenity": "cafe",
+        "cuisine": "italian",
+        "fhrs:id": "1473009",
+        "name": "The Venetian",
+        "opening_hours": "Su,Mo off; Tu 11:00-15:00; We-Fr 11:00-22:00; Sa 10:00-22:00",
+        "phone": "+44 1223 324993",
+        "website": "https://thevenetiancambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4987429682,
+      "lat": 42.3717354,
+      "lon": -71.0862759,
+      "tags": {
+        "addr:housenumber": "594",
+        "addr:street": "Cambridge Street",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-01-23",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "Elmendorf Baking Supplies",
+        "note": "Baking supplies, cafe, grain mill",
+        "opening_hours": "Tu-Fr 08:00-16:00; Sa 09:00-17:00; Su 09:00-16:00",
+        "phone": "+16179450045",
+        "website": "https://elmendorfbaking.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5170793551,
+      "lat": 52.210696,
+      "lon": 0.0916353,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "William Gates Building",
+        "addr:housenumber": "15",
+        "addr:postcode": "CB3 0FD",
+        "addr:street": "J J Thomson Avenue",
+        "amenity": "cafe",
+        "cuisine": "sandwich;coffee_shop",
+        "fhrs:id": "1626030",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "wgb",
+        "name": "Computer Laboratory Café",
+        "opening_hours": "Mo-Fr 08:30-16:00",
+        "operator": "University of Cambridge",
+        "outdoor_seating": "yes",
+        "ref": "W046.1",
+        "smoking": "no",
+        "website": "https://www.unicen.cam.ac.uk/food-and-drink/places-eat/out-university-centre/computer-laboratory-cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5405323621,
+      "lat": 52.2109073,
+      "lon": 0.1143113,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "6-8",
+        "addr:postcode": "CB3 0AQ",
+        "addr:street": "Castle Street",
+        "amenity": "cafe",
+        "fhrs:id": "1473736",
+        "name": "Garden Kitchen at Kettle's Yard",
+        "opening_hours": "Tu-Su 11:00-17:00",
+        "website": "https://www.kettlesyard.co.uk/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5638563110,
+      "lat": 42.3779776,
+      "lon": -71.1073302,
+      "tags": {
+        "addr:city": "Somerville",
+        "addr:housenumber": "100",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Kirkland Street",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Broadsheet Coffee Roasters",
+        "opening_hours:covid19": "Mo-Fr 08:00-14:00; Sa-Su 09:00-15:00",
+        "phone": "+1 617 945 2867",
+        "website": "https://www.broadsheetcoffee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5694726358,
+      "lat": 52.2033658,
+      "lon": 0.1204545,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB2 3QZ",
+        "addr:street": "Pembroke Street",
+        "amenity": "cafe",
+        "fhrs:id": "1472684",
+        "name": "Whale Café",
+        "operator": "University of Cambridge",
+        "outdoor_seating": "yes",
+        "ref": "M031.2",
+        "source": "survey",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5808138653,
+      "lat": 42.3678721,
+      "lon": -71.0980312,
+      "tags": {
+        "addr:housenumber": "284",
+        "addr:street": "Broadway",
+        "amenity": "cafe",
+        "check_date": "2025-04-28",
+        "name": "Longfellows"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5812182618,
+      "lat": 52.2130714,
+      "lon": 0.1232203,
+      "tags": {
+        "access": "customers",
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB4 3BD",
+        "amenity": "cafe",
+        "name": "CamCatSol Cafe",
+        "operator": "Cambridge Catering Solutions"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5837905489,
+      "lat": 52.2066455,
+      "lon": 0.130859,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "30",
+        "addr:postcode": "CB1 1EW",
+        "addr:street": "Fitzroy Street",
+        "amenity": "cafe",
+        "cuisine": "italian_pizza;ice_cream",
+        "dog": "outside",
+        "email": "hello@aromi.co.uk",
+        "fhrs:id": "1472897",
+        "indoor_seating": "yes",
+        "name": "Aromi",
+        "opening_hours": "Su 09:00-18:00; Mo-Sa 09:00-18:00",
+        "outdoor_seating": "yes",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "no",
+        "phone": "+44 1223 584042",
+        "website": "https://www.aromi.co.uk/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5864471365,
+      "lat": 52.1965667,
+      "lon": 0.1537354,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "351",
+        "addr:postcode": "CB1 3DF",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "fhrs:id": "1472602",
+        "name": "The Edge Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5921721885,
+      "lat": 42.3589055,
+      "lon": -71.094633,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "84",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "TeaDo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6018809598,
+      "lat": -42.8284911,
+      "lon": 147.4694713,
+      "tags": {
+        "addr:housenumber": "10",
+        "addr:postcode": "7170",
+        "addr:state": "TAS",
+        "addr:street": "Runway Place",
+        "addr:suburb": "Cambridge",
+        "amenity": "cafe",
+        "name": "Runway Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6020288488,
+      "lat": 42.3704951,
+      "lon": -71.1043878,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "364",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Broadway",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;cake",
+        "name": "Barismo",
+        "phone": "+1-617-714-5536",
+        "website": "https://www.barismo.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6091711566,
+      "lat": 42.3844695,
+      "lon": -71.1196495,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1736",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-07-11",
+        "contact:facebook": "SimonsCoffeeShop",
+        "cuisine": "coffee_shop",
+        "diet:vegetarian": "yes",
+        "indoor_seating": "yes",
+        "name": "Simon's Coffee Shop",
+        "opening_hours": "Mo-Fr 07:30-15:30; Sa-Su 08:00-15:30",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1 617-497-7766"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6114674644,
+      "lat": 42.3947311,
+      "lon": -71.1269037,
+      "tags": {
+        "addr:housenumber": "2269",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-07-22",
+        "name": "Cafe Barada",
+        "opening_hours": "Mo-Th 11:30-20:30; Fr,Sa 11:30-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6117409527,
+      "lat": 42.3644659,
+      "lon": -71.0833495,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "295",
+        "addr:postcode": "02142",
+        "addr:state": "MA",
+        "addr:street": "Third Street",
+        "amenity": "cafe",
+        "name": "PRB Boulangerie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6117463841,
+      "lat": 42.3632913,
+      "lon": -71.0882151,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "73",
+        "addr:postcode": "02142",
+        "addr:state": "MA",
+        "addr:street": "Ames Street",
+        "amenity": "cafe",
+        "check_date": "2025-03-14",
+        "contact:instagram": "vestercafe",
+        "indoor_seating": "yes",
+        "name": "Vester",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa 09:00-15:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.vestercafe.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6117463842,
+      "lat": 42.3629258,
+      "lon": -71.0883977,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "415",
+        "addr:state": "MA",
+        "addr:street": "Main Street",
+        "amenity": "cafe",
+        "check_date": "2025-01-14",
+        "cuisine": "salad;juice",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Life Alive Guest",
+        "name": "Life Alive Organic Cafe",
+        "opening_hours": "07:00-21:00",
+        "outdoor_seating": "no",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124468238,
+      "lat": 42.3726749,
+      "lon": -71.116863,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1288",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-08-05",
+        "cuisine": "shakshuka;coffee;pastry",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Tatte",
+        "opening_hours": "Mo-Sa 07:00-20:00; Su 08:00-19:00",
+        "phone": "+1 617 441 4011",
+        "toilets:wheelchair": "yes",
+        "website": "https://tattebakery.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6124562866,
+      "lat": 42.373321,
+      "lon": -71.1191042,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1380",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "Blank Street Coffee",
+        "brand:wikidata": "Q114792509",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/blank-street-coffee-cambridge",
+        "cuisine": "coffee_shop",
+        "delivery": "yes",
+        "name": "Blank Street Coffee",
+        "opening_hours": "Mo-Fr 06:30-18:00; Sa-Su 07:00-18:00",
+        "takeaway": "yes",
+        "website": "https://www.blankstreet.com/en-US/locations/boston/LXRVV62J2RA5E-massachusetts-and-dunster-st",
+        "wheelchair": "yes"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 6240800910,
+      "lat": 52.2009654,
+      "lon": 0.1345695,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "42",
+        "addr:postcode": "CB1 2AD",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "check_date": "2025-08-31",
+        "check_date:opening_hours": "2022-10-10",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473538",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "5 Blends Coffee House",
+        "opening_hours:signed": "no",
+        "website": "http://5blends.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6240800912,
+      "lat": 52.2006652,
+      "lon": 0.1354919,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "54a",
+        "addr:postcode": "CB1 2AS",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-08-13",
+        "cuisine": "italian;mediterranean",
+        "fhrs:id": "1472798",
+        "name": "Modigliani",
+        "opening_hours": "Mo 08:00-15:00; We-Fr 08:00-15:30; Sa,Su 08:30-16:00",
+        "phone": "+44 7496 557140"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6268416655,
+      "lat": 42.3731187,
+      "lon": -71.1226685,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "114",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "cafe",
+        "cuisine": "bakery;cafe",
+        "name": "Flour Bakery + Cafe",
+        "opening_hours": "Mo-Fr 07:00-19:00; Sa-Su 08:00-18:00",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "phone": "+1-617-714-3205",
+        "website": "https://flourbakery.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6418462485,
+      "lat": 43.3956124,
+      "lon": -80.3582454,
+      "tags": {
+        "addr:housenumber": "710",
+        "addr:postcode": "N3H 3N9",
+        "addr:street": "King Street East",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Anubis Coffee Importing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6456658187,
+      "lat": -42.8375745,
+      "lon": 147.5059524,
+      "tags": {
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Liv-eat",
+        "opening_hours": "Mo-Su 04:30-21:30+,05:00-21:00+",
+        "takeaway": "only",
+        "wheelchair": "yes"
+      }
+    },
+
+    {
+      "type": "node",
+      "id": 6644082657,
+      "lat": 43.3925276,
+      "lon": -80.3206029,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "note": "in Indigo",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6644135787,
+      "lat": 43.3938857,
+      "lon": -80.3199581,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Real Fruit Bubble Tea",
+        "brand:wikidata": "Q66072331",
+        "check_date": "2023-07-19",
+        "cuisine": "bubble_tea",
+        "name": "Real Fruit Bubble Tea",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6754014985,
+      "lat": 42.3634784,
+      "lon": -71.0876196,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-06-09",
+        "check_date:opening_hours": "2025-06-09",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Blue Bottle",
+        "opening_hours": "Mo-Su 07:00-18:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6989939015,
+      "lat": 52.2066663,
+      "lon": 0.1317992,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "59",
+        "addr:parentstreet": "Fitzroy Street",
+        "addr:place": "Grafton Centre",
+        "addr:postcode": "CB1 1PS",
+        "amenity": "cafe",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "fhrs:id": "1473085",
+        "name": "GAIL's",
+        "shop": "bakery",
+        "source:addr": "FHRS Open Data",
+        "website": "https://gails.com/pages/cambridge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7028438785,
+      "lat": 52.1751325,
+      "lon": 0.1397182,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7028438790,
+      "lat": 52.1751672,
+      "lon": 0.1399932,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "name": "Costa",
+        "opening_hours": "Mo-Fr 07:30-14:00; Sa,Su off",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193716,
+      "lat": 42.3734973,
+      "lon": -71.1206843,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-05-30",
+        "name": "Bluestone Lane"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193739,
+      "lat": 42.3729747,
+      "lon": -71.1187857,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1350",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/pavement-coffeehouse-cambridge",
+        "cuisine": "coffee_shop",
+        "name": "Pavement Coffeehouse",
+        "opening_hours": "Mo-Fr 07:00-18:00; Sa-Su 08:00-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-649-6024",
+        "website": "https://pavementcoffeehouse.com/pages/harvard_sq",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100193742,
+      "lat": 42.3714835,
+      "lon": -71.1168814,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:state": "MA",
+        "amenity": "cafe",
+        "brand": "Blue Bottle Coffee",
+        "brand:en": "Blue Bottle Coffee",
+        "brand:ja": "ブルーボトルコーヒー",
+        "brand:wikidata": "Q4928917",
+        "cuisine": "coffee_shop",
+        "name": "Blue Bottle Coffee",
+        "name:en": "Blue Bottle Coffee",
+        "name:ja": "ブルーボトルコーヒー",
+        "opening_hours": "Mo-Su 07:00-17:00",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7100285259,
+      "lat": 42.3689886,
+      "lon": -71.1098774,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "955",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "name": "Dado Tea",
+        "opening_hours": "Mo-Fr 08:00-16:00; Sa 09:00-15:00; Su 10:00-15:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-497-9061",
+        "website": "https://dadotea.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7105847797,
+      "lat": 42.3822695,
+      "lon": -71.1309992,
+      "tags": {
+        "addr:housenumber": "200",
+        "addr:street": "Concord Ave",
+        "amenity": "cafe",
+        "check_date": "2025-08-05",
+        "description": "MARKET: 7AM TO 9PM (MONDAY-SUNDAY)\nCAFE: 7AM TO 7PM (MONDAY-FRIDAY), 7AM TO 3PM (SATURDAY-SUNDAY)",
+        "name": "Sarah's Market & Cafe",
+        "opening_hours": "Mo-Su 07:00-21:00; Mo-Fr 07:00-19:00; Sa, Su 07:00-15:00",
+        "website": "https://sarahsmarket.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7105847798,
+      "lat": 42.382499,
+      "lon": -71.1313863,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "208",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Concord Avenue",
+        "amenity": "cafe",
+        "check_date": "2025-03-21",
+        "check_date:opening_hours": "2025-03-21",
+        "contact:facebook": "https://www.facebook.com/HiRiseBreadCompany/",
+        "email": "hello@hi-risebread.com",
+        "indoor_seating": "yes",
+        "name": "Hi-Rise Bread Company",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-17:00; Su 08:00-16:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-876-8766",
+        "takeaway": "yes",
+        "website": "https://www.hi-risebread.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7163063537,
+      "lat": 52.1748407,
+      "lon": 0.1402476,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Costa",
+        "brand:wikidata": "Q608845",
+        "brand:wikipedia": "en:Costa Coffee",
+        "cuisine": "coffee_shop",
+        "name": "Costa",
+        "opening_hours": "Mo-Su 00:00-00:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7183566066,
+      "lat": 45.5731085,
+      "lon": -93.2063179,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1400",
+        "addr:postcode": "55008",
+        "addr:state": "MN",
+        "addr:street": "1st Avenue",
+        "addr:unit": "B",
+        "amenity": "cafe",
+        "branch": "Cambridge - Highway 95 and Highway 65",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 612-257-4407",
+        "ref": "1016615",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1016615/cambridge-hwy-95-and-hwy-65-1400-1st-ave-east-building-b-cambridge-mn-55008174"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7183566068,
+      "lat": 45.5732307,
+      "lon": -93.2052379,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Caribou Coffee",
+        "brand:wikidata": "Q5039494",
+        "cuisine": "coffee_shop",
+        "name": "Caribou Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7196848112,
+      "lat": 45.5736582,
+      "lon": -93.2207996,
+      "tags": {
+        "amenity": "cafe",
+        "name": "City Center Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7196890430,
+      "lat": 45.573147,
+      "lon": -93.2243397,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Just Love Coffee Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7325684676,
+      "lat": 52.2101713,
+      "lon": 0.1018725,
+      "tags": {
+        "access": "private",
+        "addr:city": "Cambridge",
+        "addr:postcode": "CB3 0WA",
+        "amenity": "cafe",
+        "fhrs:id": "1626026",
+        "name": "Mathematical Sciences Café",
+        "opening_hours": "Mo-Fr 08:30-16:00",
+        "operator": "University of Cambridge",
+        "ref": "S/MATHS054.1",
+        "source": "University of Cambridge with permission",
+        "website": "https://www.unicen.cam.ac.uk/food-and-drink/places-eat/out-university-centre/mathematical-sciences-cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7855184466,
+      "lat": 42.3762106,
+      "lon": -71.1164724,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Clover Food Lab"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7985003656,
+      "lat": 52.1734603,
+      "lon": 0.1224899,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "Clay Farm Centre",
+        "addr:postcode": "CB2 9FN",
+        "addr:street": "Hobson Square",
+        "amenity": "cafe",
+        "cuisine": "sandwich;coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "CambWifi_Public",
+        "name": "Royal Voluntary Service Cafe",
+        "opening_hours": "Mo-Fr 10:00-14:00",
+        "opening_hours:covid19": "closed",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+44 1223 457660",
+        "website": "https://www.royalvoluntaryservice.org.uk/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9393898305,
+      "lat": 52.188479,
+      "lon": 0.1366557,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Yi Fang Tea",
+        "brand:en": "Yi Fang Tea",
+        "brand:wikidata": "Q66196395",
+        "brand:wikipedia": "zh:一芳水果茶",
+        "brand:zh": "一芳水果茶",
+        "cuisine": "bubble_tea",
+        "name": "Yi Fang Tea",
+        "name:en": "Yi Fang Tea",
+        "name:zh": "一芳水果茶",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9566757353,
+      "lat": 52.205322,
+      "lon": 0.1232003,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "8",
+        "addr:postcode": "CB1 1NP",
+        "addr:street": "Christ's Lane",
+        "amenity": "cafe",
+        "check_date": "2024-07-11",
+        "cuisine": "dessert",
+        "fhrs:id": "1795797",
+        "name": "Heavenly Desserts",
+        "opening_hours": "Su-Th 12:00-22:00; Fr 12:00-23:00; Su 11:30-23:00",
+        "outdoor_seating": "yes",
+        "website": "https://heavenlydesserts.co.uk/our-stores/cambridge/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9566757359,
+      "lat": 52.2038457,
+      "lon": 0.1213416,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "35",
+        "addr:postcode": "CB2 3BJ",
+        "addr:street": "Grand Arcade",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1473816",
+        "level": "1",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Sa 07:30-18:00; Su 09:30-17:00",
+        "source:addr": "FHRS Open Data",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.co.uk/store-locator/27630-248272/cambridge-grand-arcade"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9566757390,
+      "lat": 52.204459,
+      "lon": 0.121271,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "44",
+        "addr:postcode": "CB2 3BJ",
+        "addr:street": "Grand Arcade",
+        "amenity": "cafe",
+        "fhrs:id": "1472779",
+        "indoor_seating": "yes",
+        "level": "1",
+        "name": "Ed's Easy Diner",
+        "outdoor_seating": "no",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9568054586,
+      "lat": 52.2003599,
+      "lon": 0.126625,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Kim's Cafe",
+        "note": "Unit currently used as eat-in area for Kim's Bulgogi next door."
+      }
+    },
+    {
+      "type": "node",
+      "id": 9634597037,
+      "lat": 42.3720512,
+      "lon": -71.07557,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "100",
+        "addr:postcode": "02141",
+        "addr:state": "MA",
+        "addr:street": "North First Street",
+        "amenity": "cafe",
+        "name": "Cafe Beatrice",
+        "opening_hours": "Mo 07:00-17:00; Tu-Fr 07:00-21:00; Sa 08:00-21:00; Su 08:00-17:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.thelexingtoncx.com/cafebeatrice",
+        "website:menu": "https://static1.squarespace.com/static/6183a40c5d2bb96c554023f9/t/6600440a5b3ae94a6a5ae45c/1711293451696/2024-03-14+Cafe+Beatrice+take+out.pdf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9741839042,
+      "lat": 42.3651657,
+      "lon": -71.1029784,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "605",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "Möge Tee Cambridge",
+        "opening_hours": "Mo-Su 11:00-21:30",
+        "phone": "+1 617 714 3891",
+        "website": "https://mogeteeusa.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9772842304,
+      "lat": 52.2103227,
+      "lon": 0.0901397,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "West Hub",
+        "addr:postcode": "CB3 0US",
+        "addr:street": "J J Thomson Avenue",
+        "amenity": "cafe",
+        "cuisine": "sandwich;coffee_shop",
+        "name": "West Hub Café",
+        "opening_hours": "Mo-Fr 08:00-15:00",
+        "operator": "University of Cambridge",
+        "outdoor_seating": "yes",
+        "ref": "W152.1",
+        "website": "https://www.unicen.cam.ac.uk/food-and-drink/places-eat/out-university-centre/west-hub"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9856902395,
+      "lat": 52.2011251,
+      "lon": 0.1342238,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "32",
+        "addr:postcode": "CB1 2AD",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "check_date:opening_hours": "2025-03-17",
+        "cuisine": "greek;coffee_shop",
+        "fhrs:id": "1474029",
+        "name": "Mill",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "shop": "deli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10044385161,
+      "lat": 52.2091689,
+      "lon": 0.1217683,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housename": "West Court, Jesus College",
+        "addr:postcode": "CB5 8BL",
+        "addr:street": "Jesus Lane",
+        "amenity": "cafe",
+        "bar": "yes",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "internet_access:ssid": "Jesus College Guest",
+        "name": "Roost Cafe & Bar",
+        "outdoor_seating": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10159516330,
+      "lat": 52.1937402,
+      "lon": 0.1363691,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "CB1 2GA",
+        "addr:street": "Station Square",
+        "amenity": "cafe",
+        "brand": "GAIL's Bakery",
+        "brand:wikidata": "Q110662562",
+        "fhrs:id": "1534396",
+        "name": "GAIL's",
+        "opening_hours": "Mo 07:30-17:40; Tu-Sa 07:30-17:30; Su 07:30-17:00",
+        "shop": "bakery",
+        "source:addr": "FHRS Open Data",
+        "website": "https://gails.com/pages/cambridge-station-square"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10196095988,
+      "lat": 43.4117075,
+      "lon": -80.3098217,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10756603186,
+      "lat": 42.3880073,
+      "lon": -71.1196008,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1868",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "Caffè Nero",
+        "brand:wikidata": "Q675808",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Caffè Nero",
+        "opening_hours": "Mo-Th 06:30-18:00; Fr-Su 06:30-19:00",
+        "outdoor_seating": "no",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-812-4391",
+        "smoking": "no",
+        "takeaway": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10840402771,
+      "lat": 52.2191864,
+      "lon": 0.1161795,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housenumber": "74",
+        "addr:postcode": "CB4 3HG",
+        "addr:street": "Akeman Street",
+        "amenity": "cafe",
+        "fhrs:id": "1619890",
+        "indoor_seating": "yes",
+        "name": "Cafe Camtown",
+        "outdoor_seating": "yes",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:qr_code": "no",
+        "smoking": "outside",
+        "source:addr": "FHRS Open Data",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10904459395,
+      "lat": 42.3950869,
+      "lon": -71.1459939,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "125",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "Cambridgepark Drive",
+        "amenity": "cafe",
+        "branch": "Alewife",
+        "cuisine": "coffee_shop;sandwich",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "name": "Revival Cafe + Kitchen",
+        "opening_hours": "Mo-Su 08:00-15:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-665-5899",
+        "takeaway": "yes",
+        "website": "https://www.revivalcafeandkitchen.com/alewife"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11033267014,
+      "lat": 43.3590285,
+      "lon": -80.311632,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Coffee Culture",
+        "brand:wikidata": "Q130545230",
+        "check_date": "2023-07-07",
+        "cuisine": "coffee_shop",
+        "name": "Coffee Culture",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11173198322,
+      "lat": 42.3628922,
+      "lon": -71.094241,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Cafe Luna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11173231405,
+      "lat": 42.3622285,
+      "lon": -71.0863681,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "314",
+        "addr:postcode": "02142",
+        "addr:state": "MA",
+        "addr:street": "Main Street",
+        "amenity": "cafe",
+        "name": "Ripple Cafe",
+        "opening_hours": "Mo 08:30-16:30; Tu-Fr 08:00-16:30; Sa-Su 09:00-15:30",
+        "outdoor_seating": "yes",
+        "phone": "+1-774-225-2362",
+        "website": "https://www.rippleboston.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11190852970,
+      "lat": 42.3735428,
+      "lon": -71.0985361,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1271",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Cambridge Street",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "bar": "no",
+        "indoor_seating": "yes",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "bōm dough",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr-Su 08:00-17:00",
+        "smoking": "no",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11203262520,
+      "lat": 52.1736926,
+      "lon": 0.1231265,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:street": "Poulter Walk",
+        "amenity": "cafe",
+        "fhrs:id": "1602980",
+        "name": "Dao Cafe",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su 10:00-17:00; PH 09:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11210834995,
+      "lat": 52.2180461,
+      "lon": 0.1440052,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "172",
+        "addr:postcode": "CB4 1NS",
+        "addr:street": "High Street",
+        "amenity": "cafe",
+        "building": "no",
+        "email": "mikey.dowling@mail.com",
+        "fhrs:id": "1654766",
+        "name": "Mikey's Food Box",
+        "phone": "+44 1223 636817",
+        "takeaway": "only",
+        "toilets": "no",
+        "website": "https://www.facebook.com/profile.php?id=61551212470727"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11260986898,
+      "lat": 52.2133608,
+      "lon": 0.1121672,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "82",
+        "addr:postcode": "CB3 0AJ",
+        "addr:street": "Castle Street",
+        "amenity": "cafe",
+        "fhrs:id": "1473226",
+        "name": "Area Café",
+        "opening_hours": "Mo-Fr 08:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11263300637,
+      "lat": 42.3728528,
+      "lon": -71.1197184,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "24",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "cafe",
+        "check_date": "2024-08-25",
+        "name": "Capitol One Cafe",
+        "opening_hours": "Mo-Sa 7:00-19:00, Su 08:00-17:00",
+        "website": "https://www.harvardsquare.com/venue/capital-one-360-cafe/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11308059845,
+      "lat": 42.3739117,
+      "lon": -71.112954,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "468",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Broadway",
+        "amenity": "cafe",
+        "branch": "Broadway Marketplace",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "phone": "+1 617-491-9911",
+        "ref": "12268",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/12268/broadway-marketplace-468-broadway-cambridge-ma-021383908-us"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11315905223,
+      "lat": 43.4517276,
+      "lon": -80.3672851,
+      "tags": {
+        "amenity": "cafe",
+        "diet:gluten_free": "yes",
+        "highchair": "yes",
+        "name": "Chrysalis Cafe",
+        "note": "Part of butterfly conservatory, requires ticket to conservatory to enter",
+        "outdoor_seating": "yes",
+        "payment:cards": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11378595753,
+      "lat": 52.1947301,
+      "lon": 0.1382483,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-01-09",
+        "indoor_seating": "no",
+        "level": "0",
+        "name": "Gourmet Coffee Bar & Kitchen",
+        "old_name": "AMT Coffee",
+        "outdoor_seating": "no",
+        "takeaway": "only",
+        "website": "https://gourmetcoffeebar.co.uk/locations/?location=42001698"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11433391477,
+      "lat": 42.3676769,
+      "lon": -71.1019944,
+      "tags": {
+        "addr:housenumber": "106",
+        "addr:street": "Prospect Street",
+        "amenity": "cafe",
+        "contact:instagram": "https://www.instagram.com/cicadacoffeebar/",
+        "cuisine": "coffee_shop",
+        "email": "cicadacoffeebar@gmail.com",
+        "name": "Cicada Coffee Bar",
+        "opening_hours": "Tu-Fr 08:00-15:00; Sa-Su 09:00-15:00",
+        "phone": "+1-617-714-4766",
+        "toilets:access": "customers",
+        "toilets:disposal": "flush",
+        "toilets:female": "yes",
+        "toilets:gender_segregated": "no",
+        "toilets:male": "yes",
+        "toilets:num_chambers": "1",
+        "toilets:position": "seated",
+        "toilets:unisex": "yes",
+        "website:menu": "https://cicada-coffee-bar.square.site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11445412738,
+      "lat": 52.1749244,
+      "lon": 0.1354931,
+      "tags": {
+        "amenity": "cafe",
+        "opening_hours": "Mo-Fr 9:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11463272928,
+      "lat": 40.0032422,
+      "lon": -81.5755221,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2023-12-28",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "name": "The Human Bean"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11538149918,
+      "lat": 42.3859806,
+      "lon": -71.1194887,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1792",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "OneZo Tapioca",
+        "brand:en": "OneZo Tapioca",
+        "brand:wikidata": "Q111537052",
+        "brand:zh": "丸作",
+        "cuisine": "bubble_tea",
+        "name": "OneZo Tapioca",
+        "name:en": "OneZo Tapioca",
+        "name:zh": "丸作",
+        "opening_hours": "Mo-Su 00:00-02:00",
+        "phone": "+16179451003",
+        "takeaway": "yes",
+        "website": "https://www.onezo.us/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11546124669,
+      "lat": 52.1946422,
+      "lon": 0.1375269,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:county": "Cambridgeshire",
+        "addr:housename": "Cambridge Railway Station",
+        "addr:postcode": "CB1 2JW",
+        "addr:street": "Station Square",
+        "amenity": "cafe",
+        "cuisine": "cake;coffee_shop",
+        "fhrs:id": "1472971",
+        "name": "Flavour Station",
+        "nohousenumber": "yes",
+        "opening_hours": "Mo-Su 06:00-15:30",
+        "source:addr": "FHRS Open Data"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11760791307,
+      "lat": 52.2184831,
+      "lon": 0.0878598,
+      "tags": {
+        "addr:postcode": "CB3 1AS",
+        "addr:street": "Eddington Place",
+        "amenity": "cafe",
+        "fhrs:id": "1706226",
+        "name": "Dulcedo Social",
+        "opening_hours": "Mo-Sa 07:30-16:30; Su 09:00-15:00",
+        "outdoor_seating": "yes",
+        "website": "https://www.instagram.com/dulcedo.social/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11960303696,
+      "lat": 43.0038517,
+      "lon": -89.0191014,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2025-08-23",
+        "cuisine": "coffee_shop",
+        "name": "Cambridge Market Cafe",
+        "opening_hours": "Mo,Su off; Tu-Fr 07:00-04:00; Sa 07:00-15:00",
+        "panoramax": "b91ccd72-6d57-4ca4-aa5f-f082dcc7487a",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "toilets:fee": "no",
+        "toilets:gender_segregated": "yes",
+        "toilets:supervised": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12044998132,
+      "lat": 43.3797636,
+      "lon": -80.2994177,
+      "tags": {
+        "addr:housenumber": "A4",
+        "addr:postcode": "N1R 7Z1",
+        "addr:street": "800",
+        "addr:unit": "Frankling Boulevard",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "Boba Shack",
+        "opening_hours": "Su-Th 10:30-00:00; Fr-Sa 11:00-02:00",
+        "website": "https://www.bobashack.ca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12046569949,
+      "lat": 52.2013107,
+      "lon": 0.1252964,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:country": "GB",
+        "addr:housenumber": "40",
+        "addr:postcode": "CB2 1DP",
+        "addr:street": "Regent Street",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472639",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "Mo-Su 07:00-19:30",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.co.uk/store-locator/47133-256909/cambridge-regent-street"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12079223523,
+      "lat": 42.371266,
+      "lon": -71.1147192,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "5",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Arrow Street",
+        "amenity": "cafe",
+        "check_date": "2025-09-07",
+        "contact:instagram": "https://www.instagram.com/faro__cafe/",
+        "contact:yelp": "https://www.yelp.com/biz/faro-cambridge-2",
+        "cuisine": "coffee_shop",
+        "name": "Faro Cafe",
+        "opening_hours": "Mo-Th,Su 08:00-16:00; Fr-Sa 08:00-22:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12086137814,
+      "lat": 52.2094621,
+      "lon": 0.1448806,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "Unit 20",
+        "addr:postcode": "CB5 8WR",
+        "addr:street": "Cambridge Retail Park",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "cuisine": "coffee_shop",
+        "fhrs:id": "1472561",
+        "internet_access": "yes",
+        "internet_access:fee": "no",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1012129/cambridge-new-market-road-unit-20-cambridge-retail-park-new-market-road-camb"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12096267845,
+      "lat": 42.3713068,
+      "lon": -71.114636,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1160",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "amenity": "cafe",
+        "brand": "Kung Fu Tea",
+        "brand:wikidata": "Q66023886",
+        "check_date": "2025-09-07",
+        "contact:yelp": "https://www.yelp.com/biz/kung-fu-tea-cambridge",
+        "cuisine": "bubble_tea",
+        "name": "Kung Fu Tea",
+        "opening_hours": "Su-Th 11:00-22:00; Fr-Sa 11:00-23:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+1-617-714-5055",
+        "takeaway": "yes",
+        "website": "https://www.kungfutea.com/location/?l=harvard-sq--20425920",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12136739125,
+      "lat": 42.3729665,
+      "lon": -71.1196344,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "22",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "cafe",
+        "check_date": "2024-08-25",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Life Alive Organic Cafe",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "website": "https://www.lifealive.com/location/harvard-square"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12209833537,
+      "lat": 42.3740268,
+      "lon": -71.125103,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "148",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "Mount Auburn Street",
+        "amenity": "cafe",
+        "cuisine": "sandwich;coffee_shop",
+        "name": "Luxor Cafe",
+        "opening_hours": "Mo-Th 07:00-20:00; Fr 07:00-22:00; Sa 08:00-22:00; Su 08:00-21:00",
+        "phone": "+1-617-661-0904",
+        "website": "https://luxorcafee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12681650739,
+      "lat": 52.2067777,
+      "lon": 0.134687,
+      "tags": {
+        "amenity": "cafe",
+        "level": "1",
+        "name": "Amélie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12713598460,
+      "lat": 52.2008206,
+      "lon": 0.1194981,
+      "tags": {
+        "addr:housenumber": "40",
+        "addr:street": "Trumpington Street",
+        "amenity": "cafe",
+        "name": "PAGES Coffee House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12752349640,
+      "lat": 42.3831234,
+      "lon": -71.1160519,
+      "tags": {
+        "addr:housenumber": "102;104",
+        "addr:street": "Oxford Street",
+        "amenity": "cafe",
+        "check_date": "2025-04-13",
+        "cuisine": "coffee_shop",
+        "name": "Little Crepe Cafe",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-19:00; Sa-Su 11:00-16:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12887768158,
+      "lat": 42.3733064,
+      "lon": -71.1197215,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "02138",
+        "addr:state": "MA",
+        "addr:street": "John F. Kennedy Street",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "check_date": "2025-06-26",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "level": "0",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "opening_hours": "05:00-21:00",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12926122227,
+      "lat": 42.3667543,
+      "lon": -71.0828094,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Kuya Jay’s Ube Kafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12961335470,
+      "lat": 42.3908746,
+      "lon": -71.121669,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1995",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "Massachusetts Avenue",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "bar": "no",
+        "changing_table": "yes",
+        "cuisine": "coffee_shop",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "CSCA Cafe",
+        "opening_hours": "Mo-Th 07:30-15:00; Fr 07:30-17:00; Sa-Su 08:00-14:00",
+        "outdoor_seating": "yes",
+        "phone": "+1-617-693-0789",
+        "toilets": "yes",
+        "website": "https://www.cscacafe.com",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13014405753,
+      "lat": 52.1883121,
+      "lon": 0.1438734,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Stir",
+        "outdoor_seating": "yes",
+        "website": "https://www.yourstir.co.uk/locations/old-swiss/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13102711101,
+      "lat": 42.3664236,
+      "lon": -71.0931449,
+      "tags": {
+        "addr:housenumber": "205",
+        "addr:street": "Broadway",
+        "amenity": "cafe",
+        "cuisine": "bubble_tea",
+        "name": "Teaholic",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "website": "https://www.teaholicboba.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13121509253,
+      "lat": 42.3896268,
+      "lon": -71.1188433,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "25",
+        "addr:postcode": "02140",
+        "addr:state": "MA",
+        "addr:street": "White Street",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Cafe Zing",
+        "outdoor_seating": "yes",
+        "phone": "+16174979464",
+        "website": "https://www.cafezingcambridge.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13121712882,
+      "lat": 42.3872991,
+      "lon": -71.1189768,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Page & Leaf Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13157848101,
+      "lat": 52.2065456,
+      "lon": 0.118988,
+      "tags": {
+        "addr:housenumber": "28",
+        "addr:postcode": "CB2 3JX",
+        "addr:street": "Green Street",
+        "amenity": "cafe",
+        "name": "Knoops"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13168837325,
+      "lat": 42.3716157,
+      "lon": -71.0835343,
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "441",
+        "addr:postcode": "02141",
+        "addr:state": "MA",
+        "addr:street": "Cambridge Street",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Curio Coffee",
+        "outdoor_seating": "no",
+        "phone": "+18572423018",
+        "website": "https://curiocoffee.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13172225901,
+      "lat": 42.3667699,
+      "lon": -71.0901464,
+      "tags": {
+        "addr:housenumber": "600",
+        "amenity": "cafe",
+        "name": "Area Four",
+        "phone": "+16179457214",
+        "website": "https://areafour.com"
+      }
+    },
+
+    {
+      "type": "way",
+      "id": 115606609,
+      "center": {
+        "lat": 52.2125608,
+        "lon": 0.143071
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Kerb Kollective",
+        "opening_hours": "Mo-Th 08:00-15:00; Fr 08:00-16:00; Sa,Su 09:00-16:00",
+        "shop": "ticket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 134808006,
+      "center": {
+        "lat": 52.1953988,
+        "lon": 0.1310743
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "55a",
+        "addr:postcode": "CB2 1NT",
+        "addr:street": "Hills Road",
+        "amenity": "cafe",
+        "building": "commercial",
+        "check_date:opening_hours": "2025-08-08",
+        "cuisine": "coffee_shop",
+        "name": "Brook Brothers",
+        "opening_hours:signed": "no",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 134808012,
+      "center": {
+        "lat": 52.1951458,
+        "lon": 0.1316289
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "7",
+        "addr:postcode": "CB1 2JB",
+        "addr:street": "Station Road",
+        "amenity": "cafe",
+        "building": "yes",
+        "check_date": "2025-05-27",
+        "cuisine": "bakery;potrtuguese",
+        "name": "Norfolk Street Bakery",
+        "old_name": "Sandwich Plus",
+        "opening_hours": "Mo-Fr 08:00-16:00; Sa 08:30-14:00; Su off",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135009399,
+      "center": {
+        "lat": 52.1990667,
+        "lon": 0.1395012
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "116",
+        "addr:postcode": "CB1 2BQ",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "building": "commercial",
+        "building:levels": "2",
+        "fhrs:id": "1647023",
+        "name": "Juic'it Up"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135028996,
+      "center": {
+        "lat": 52.1998817,
+        "lon": 0.1373236
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "102",
+        "addr:postcode": "CB1 2BD",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "chaiiology",
+        "roof:levels": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135032813,
+      "center": {
+        "lat": 52.2002145,
+        "lon": 0.1365555
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "82",
+        "addr:postcode": "CB1 2AS",
+        "addr:street": "Mill Road",
+        "amenity": "cafe",
+        "building": "commercial",
+        "building:levels": "2",
+        "check_date": "2025-08-31",
+        "fhrs:id": "1473743",
+        "name": "Small Green",
+        "opening_hours": "Tu-Fr 09:00-16:00; Sa 10:00-17:00",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 135919625,
+      "center": {
+        "lat": 52.2202737,
+        "lon": 0.145963
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "150b",
+        "addr:postcode": "CB4 1QQ",
+        "addr:street": "Scotland Road",
+        "amenity": "cafe",
+        "building": "commercial",
+        "check_date:opening_hours": "2024-08-26",
+        "fhrs:id": "1680704",
+        "name": "CB4 Café",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 141329839,
+      "center": {
+        "lat": 52.1940884,
+        "lon": 0.1282015
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "1",
+        "addr:postcode": "CB2 1JE",
+        "addr:street": "Brookside",
+        "amenity": "cafe",
+        "building": "yes",
+        "fhrs:id": "1473189",
+        "name": "Garden Café, Gilmour Suite",
+        "operator": "University of Cambridge",
+        "ref": "L064.2",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 172917614,
+      "center": {
+        "lat": 52.1885071,
+        "lon": 0.1407702
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "86a",
+        "addr:postcode": "CB1 7AG",
+        "addr:street": "Cherry Hinton Road",
+        "amenity": "cafe",
+        "building": "commercial",
+        "fhrs:id": "1472893",
+        "name": "Harpur's Cafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 193914910,
+      "center": {
+        "lat": 38.561213,
+        "lon": -76.0638807
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "703",
+        "addr:postcode": "21613",
+        "addr:state": "MD",
+        "addr:street": "Cambridge Marketplace Boulevard",
+        "amenity": "cafe",
+        "branch": "50 West & Crusader Road, Cambridge,",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "drive_through:covid19": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "outdoor_seating": "yes",
+        "phone": "+1 410-228-2796",
+        "ref": "1017283",
+        "takeaway": "yes",
+        "website": "https://www.starbucks.com/store-locator/store/1017283/50-w-crusader-rd-cambridge-703-cambridge-marketplace-blvd-cambridge-md-21613-"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208833460,
+      "center": {
+        "lat": -42.8369248,
+        "lon": 147.4412482
+      },
+      "tags": {
+        "addr:housenumber": "971",
+        "addr:postcode": "7170",
+        "addr:state": "TAS",
+        "addr:street": "Cambridge Road",
+        "addr:suburb": "Cambridge",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Cambridge Kitchen and Newsagency"
+      }
+    },
+    {
+      "type": "way",
+      "id": 210068662,
+      "center": {
+        "lat": 52.1956896,
+        "lon": 0.1147447
+      },
+      "tags": {
+        "addr:postcode": "CB3 9PA",
+        "addr:street": "Driftway",
+        "amenity": "cafe",
+        "building": "kiosk",
+        "name": "Crofters",
+        "opening_hours": "Mo-Su 10:00-16:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 246597494,
+      "center": {
+        "lat": 44.5717154,
+        "lon": -116.6762856
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Bucky's Cafe"
+      }
+    },
+
+    {
+      "type": "way",
+      "id": 253474812,
+      "center": {
+        "lat": 43.4012005,
+        "lon": -80.3252073
+      },
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "brand:wikipedia": "en:Starbucks",
+        "building": "retail",
+        "cuisine": "coffee_shop",
+        "drive_through": "yes",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "source": "Bing",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 637134337,
+      "center": {
+        "lat": 44.5723393,
+        "lon": -116.6753009
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Round Up Coffee House"
+      }
+    },
+    {
+      "type": "way",
+      "id": 766133378,
+      "center": {
+        "lat": 40.0248742,
+        "lon": -81.5866848
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "955",
+        "addr:postcode": "43725",
+        "addr:state": "OH",
+        "addr:street": "Wheeling Avenue",
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Ladders Coffee Bar",
+        "opening_hours": "Mo-Fr 07:00-13:00",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770991813,
+      "center": {
+        "lat": 45.572291,
+        "lon": -93.2237523
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Peoples Cafe",
+        "opening_hours": "Mo-Su 06:00-14:00"
+      }
+    },
+    {
+      "type": "way",
+      "id": 772664177,
+      "center": {
+        "lat": 45.5779167,
+        "lon": -93.2221239
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Everyday Cafe"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182049754,
+      "center": {
+        "lat": 52.1937488,
+        "lon": 0.1664692
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1203332903,
+      "center": {
+        "lat": 45.5724009,
+        "lon": -93.2212101
+      },
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Scooter's Coffee",
+        "brand:wikidata": "Q117280308",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Scooter's Coffee",
+        "opening_hours": "Mo-Fr 05:00-19:00; Sa,Su 06:00-19:00",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1256340744,
+      "center": {
+        "lat": 52.1718891,
+        "lon": 0.1328886
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Astra Zeneca Travel Hub",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1258968844,
+      "center": {
+        "lat": 52.2030891,
+        "lon": 0.1247528
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "cuisine": "coffee_shop",
+        "name": "Fiona's Cafe",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1261840086,
+      "center": {
+        "lat": 42.3685285,
+        "lon": -71.0947393
+      },
+      "tags": {
+        "addr:city": "Cambridge",
+        "addr:housenumber": "90",
+        "addr:postcode": "02139",
+        "addr:state": "MA",
+        "addr:street": "Hampshire Street",
+        "amenity": "cafe",
+        "building": "yes",
+        "check_date": "2024-03-12",
+        "cuisine": "coffee_shop",
+        "disused:amenity": "cafe",
+        "drive_through": "no",
+        "email": "Gypsyplacecoffee@gmail.com",
+        "name": "Gypsy Place Coffee and Juice Bar",
+        "outdoor_seating": "yes",
+        "phone": "617-945-9736",
+        "reservation": "no",
+        "website": "https://www.gypsyplacecoffee.com/",
+        "website:menu": "https://ritual.co/order/gypsy-place-coffee-juice-bar-windsor-hampshire-cambridge/7f1d?r=GYPSY",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1323451309,
+      "center": {
+        "lat": 52.1881877,
+        "lon": 0.1356519
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "yes",
+        "name": "Hills Café"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 7952616,
+      "center": {
+        "lat": 52.2016858,
+        "lon": 0.1241308
+      },
+      "tags": {
+        "amenity": "cafe",
+        "building": "university",
+        "name": "Butterfield Café",
+        "operator": "Downing College (University of Cambridge)",
+        "ref": "DOW011",
+        "source": "laser measure ground survey",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}
