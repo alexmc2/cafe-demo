@@ -5,10 +5,18 @@ import {
   getRichTextContainerClass,
   type RichTextStyleOptions,
 } from "@/lib/styles/rich-text";
+import type { PortableTextProps } from "@portabletext/react";
 import { stegaClean } from "next-sanity";
-import type { PortableTextBlock } from "@portabletext/types";
 
-import type { ColorVariant, SectionPadding } from "@/sanity.types";
+import type {
+  ColorVariant,
+  PAGE_QUERYResult,
+  SectionPadding,
+} from "@/sanity.types";
+
+type PageBlock = NonNullable<NonNullable<PAGE_QUERYResult>["blocks"]>[number];
+type QueryRichTextBlock = Extract<PageBlock, { _type: "rich-text-block" }>;
+type RichTextBody = QueryRichTextBlock["body"];
 
 export type RichTextBlockProps = {
   _type: "rich-text-block";
@@ -22,7 +30,7 @@ export type RichTextBlockProps = {
   fontSize?: RichTextStyleOptions["fontSize"] | null;
   textColorVariant?: RichTextStyleOptions["textColor"] | null;
   spacing?: RichTextStyleOptions["spacing"] | null;
-  body?: PortableTextBlock[] | null;
+  body?: RichTextBody | null;
 };
 
 export type RichTextContentProps = Pick<
@@ -75,7 +83,10 @@ export function RichTextContent({
 
   return (
     <div className={className}>
-      <PortableTextRenderer value={body} spacing="none" />
+      <PortableTextRenderer
+        value={body as PortableTextProps["value"]}
+        spacing="none"
+      />
     </div>
   );
 }
