@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useMemo, useState } from 'react';
-import type { KeyboardEvent } from 'react';
 import Image from 'next/image';
 import * as Dialog from '@radix-ui/react-dialog';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
@@ -63,7 +62,7 @@ export default function GalleryClient({
   }, [images, activeIndex]);
 
   const handleKeyDown = useCallback(
-    (event: KeyboardEvent<HTMLDivElement>) => {
+    (event: React.KeyboardEvent<HTMLDivElement>) => {
       if (!open) {
         return;
       }
@@ -183,9 +182,6 @@ export default function GalleryClient({
                           {activeImage.caption}
                         </p>
                       )}
-                      <p className="text-xs uppercase tracking-wide">
-                        Image {(activeIndex ?? 0) + 1} of {imageCount}
-                      </p>
                     </div>
                   </div>
                 </>
