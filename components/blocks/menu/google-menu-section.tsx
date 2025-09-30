@@ -924,7 +924,7 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
   const desktopNavWrapperRef = useRef<HTMLDivElement | null>(null);
   const desktopNavListRef = useRef<HTMLElement | null>(null);
   const measurementContainerRef = useRef<HTMLDivElement | null>(null);
-  const moreButtonMeasurementRef = useRef<HTMLButtonElement | null>(null);
+  const moreButtonMeasurementRef = useRef<HTMLElement | null>(null);
 
   const [desktopVisibleCount, setDesktopVisibleCount] = useState(
     parsedCategories.length
@@ -970,7 +970,7 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
 
       for (let index = 0; index < parsedCategories.length; index += 1) {
         const category = parsedCategories[index];
-        const button = measurement.querySelector<HTMLButtonElement>(
+        const button = measurement.querySelector<HTMLElement>(
           `[data-measure-slug="${category.slug}"]`
         );
 
@@ -1280,19 +1280,16 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
           ref={measurementContainerRef}
         >
           {parsedCategories.map((category) => (
-            <button
+            <span
               key={`${category.key}-measure`}
-              type="button"
               data-measure-slug={category.slug}
-              className="relative whitespace-nowrap border-b-2 border-transparent pb-2 text-xl font-medium"
+              className="relative inline-block whitespace-nowrap border-b-2 border-transparent pb-2 text-xl font-medium"
             >
               {category.title}
-            </button>
+            </span>
           ))}
-          <button
+          <span
             ref={moreButtonMeasurementRef}
-            type="button"
-            tabIndex={-1}
             className={cn(
               buttonVariants({ variant: 'ghost' }),
               'gap-2 rounded-full border border-[color:var(--menu-border-color)] bg-transparent px-3 py-2 text-sm font-medium text-[color:var(--menu-nav-base)]'
@@ -1300,7 +1297,7 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
           >
             More
             <MoreHorizontal className="size-4" />
-          </button>
+          </span>
         </div>
 
         <Accordion
