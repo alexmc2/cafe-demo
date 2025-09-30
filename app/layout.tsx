@@ -22,7 +22,7 @@ const metadataBase = (() => {
 })();
 
 const defaultDescription =
-  'Fast, professional, mobile-first website for cafes and restaurants. Easy to update, SEO optimised, and built to convert visitors into customers.';
+  'Professional website for cafes and restaurants. Fast, mobile-friendly, and easy to update yourself. See the live demo.';
 const defaultLogoUrl = new URL('/demo-logo.svg', metadataBase).toString();
 
 export const metadata: Metadata = {

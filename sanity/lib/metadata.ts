@@ -6,7 +6,7 @@ const isProduction = process.env.NEXT_PUBLIC_SITE_ENV === 'production';
 const fallbackSiteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 const siteDescription =
-  'Fast, professional, mobile-first website for cafes and restaurants. Easy to update, SEO optimised, and built to convert visitors into customers.';
+  'Professional website for cafes and restaurants. Fast, mobile-friendly, and easy to update yourself. See the live demo.';
 const siteTitle = 'Café Demo | Professional Website for Independent Cafes';
 const siteLogoUrl = new URL('/demo-logo.svg', fallbackSiteUrl).toString();
 
