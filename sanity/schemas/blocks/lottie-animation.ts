@@ -156,9 +156,16 @@ export default defineType({
     select: {
       size: "animationSize",
       align: "animationAlign",
-      hasAnimation: "animation.asset._ref",
+      animation: "animation",
     },
-    prepare({ size, align, hasAnimation }) {
+    prepare({ size, align, animation }) {
+      const hasAnimation = Boolean(
+        animation?.asset?._ref ||
+          animation?.asset?._id ||
+          animation?._sanityAsset ||
+          animation?.url
+      );
+
       return {
         title: "Lottie Animation",
         subtitle: hasAnimation
