@@ -53,7 +53,12 @@ export default function MobileNav({
       <SheetContent>
         <SheetHeader>
           <div className="mx-auto pt-12">
-            <Logo settings={settings} />
+            <Logo
+              settings={settings}
+              variant="header"
+              className="mx-auto max-h-12 w-auto"
+              sizes="180px"
+            />
           </div>
           <div className="flex justify-center pt-6">
             <ModeToggle />

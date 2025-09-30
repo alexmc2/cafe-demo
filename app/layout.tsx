@@ -22,18 +22,18 @@ const metadataBase = (() => {
 })();
 
 const defaultDescription =
-  'Schema UI Starter is a Sanity-powered marketing site built with the Next.js App Router.';
+  'Fast, professional, mobile-first website for cafes and restaurants. Easy to update, SEO optimised, and built to convert visitors into customers.';
 const defaultLogoUrl = new URL('/demo-logo.svg', metadataBase).toString();
 
 export const metadata: Metadata = {
   metadataBase,
   title: {
-    template: '%s | Schema UI Starter',
-    default: 'Sanity Next.js Website | Schema UI Starter',
+    template: '%s | Café Demo',
+    default: 'Café Demo | Professional Website for Independent Cafes',
   },
   description: defaultDescription,
   openGraph: {
-    title: 'Sanity Next.js Website | Schema UI Starter',
+    title: 'Café Demo | Professional Website for Independent Cafes',
     description: defaultDescription,
     images: [
       {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    locale: 'en_US',
+    locale: 'en_GB',
     type: 'website',
   },
   robots: !isProduction ? 'noindex, nofollow' : 'index, follow',

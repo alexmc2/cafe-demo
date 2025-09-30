@@ -156,7 +156,7 @@ export default defineType({
     select: {
       size: "animationSize",
       align: "animationAlign",
-      hasAnimation: "animation.asset._id",
+      hasAnimation: "animation.asset._ref",
     },
     prepare({ size, align, hasAnimation }) {
       return {

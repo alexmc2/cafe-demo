@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
@@ -10,6 +9,7 @@ import MobileNav from '@/components/header/mobile-nav';
 import { ModeToggle } from '@/components/menu-toggle';
 import { cn } from '@/lib/utils';
 import { NAVIGATION_QUERYResult, SETTINGS_QUERYResult } from '@/sanity.types';
+import Logo from '@/components/logo';
 
 type HeaderClientProps = {
   navigation: NAVIGATION_QUERYResult;
@@ -154,7 +154,7 @@ export default function HeaderClient({
       >
         <div
           className={cn(
-            'container flex min-h-[3.5rem] items-center justify-between gap-6 py-3 sm:py-4 transition-colors duration-500',
+            'container flex min-h-[3.5rem] items-center justify-between gap-6 py-3 sm:py-3 transition-colors duration-500',
             textClass
           )}
         >
@@ -164,16 +164,15 @@ export default function HeaderClient({
             aria-label="Home page"
             className="flex items-center gap-3 transition-transform duration-300 hover:scale-[1.01]"
           >
-            <span className="relative h-8 w-8 sm:h-10 sm:w-10">
-              <Image
-                src="/AAA.svg"
-                alt=""
-                fill
-                sizes="(min-width: 640px) 40px, 32px"
-                className="pointer-events-none"
-              />
+            <Logo
+              settings={settings}
+              variant="header"
+              className="max-h-8 w-auto sm:max-h-10"
+              sizes="(min-width: 1280px) 160px, (min-width: 640px) 120px, 96px"
+            />
+            <span className="sr-only">
+              {settings?.siteName || 'Sanity Next.js Website home'}
             </span>
-            <span className="sr-only">Sanity Next.js Website home</span>
           </Link>
 
           <div className="hidden items-center gap-6 xl:flex">

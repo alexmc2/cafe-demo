@@ -5,9 +5,24 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { SETTINGS_QUERYResult } from "@/sanity.types";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { cn } from "@/lib/utils";
 
-export default function Logo({ settings }: { settings: SETTINGS_QUERYResult }) {
+type LogoVariant = "header" | "footer";
+
+type LogoProps = {
+  settings: SETTINGS_QUERYResult;
+  variant?: LogoVariant;
+  className?: string;
+  sizes?: string;
+};
+
+export default function Logo({
+  settings,
+  variant = "header",
+  className,
+  sizes,
+}: LogoProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -20,39 +35,74 @@ export default function Logo({ settings }: { settings: SETTINGS_QUERYResult }) {
   const themeToUse = mounted ? resolvedTheme : "light";
 
   // Select the appropriate logo based on resolved theme (handles "system" correctly)
-  const selectedLogo =
-    settings?.logo?.[themeToUse === "dark" ? "dark" : "light"];
+  const logoGroup = useMemo(() => {
+    if (!settings) return undefined;
+    return variant === "footer"
+      ? settings?.footerLogo
+      : settings?.headerLogo;
+  }, [settings, variant]);
+
+  const selectedLogo = logoGroup?.[
+    themeToUse === "dark" ? "dark" : "light"
+  ];
 
   // If no logo for the current theme, try the opposite theme as fallback
   const fallbackLogo =
-    settings?.logo?.[themeToUse === "dark" ? "light" : "dark"];
+    logoGroup?.[themeToUse === "dark" ? "light" : "dark"];
   const logoToUse = selectedLogo || fallbackLogo;
 
-  return logoToUse ? (
-    <Image
-      src={urlFor(logoToUse).url()}
-      alt={settings.siteName || ""}
-      width={
-        (settings.logo?.width as number) ??
-        logoToUse?.asset?.metadata?.dimensions?.width ??
-        100
-      }
-      height={
-        (settings.logo?.height as number) ??
-        logoToUse?.asset?.metadata?.dimensions?.height ??
-        40
-      }
-      title={settings.siteName || ""}
-      placeholder={
-        logoToUse?.asset?.metadata?.lqip &&
-        logoToUse?.asset?.mimeType !== "image/svg+xml"
-          ? "blur"
-          : undefined
-      }
-      blurDataURL={logoToUse?.asset?.metadata?.lqip || undefined}
-    />
-  ) : (
-    <span className="text-lg font-semibold tracking-tighter">
+  const shouldRenderFallback =
+    (variant === "footer"
+      ? settings?.showSiteNameInFooter
+      : settings?.showSiteNameInHeader) ?? true;
+
+  const width =
+    (logoGroup?.width as number | undefined) ??
+    logoToUse?.asset?.metadata?.dimensions?.width ??
+    100;
+  const height =
+    (logoGroup?.height as number | undefined) ??
+    logoToUse?.asset?.metadata?.dimensions?.height ??
+    40;
+
+  const logoClass = cn(
+    variant === "header" ? "pointer-events-none" : undefined,
+    className
+  );
+
+  const fallbackClass = cn(
+    "text-lg font-semibold tracking-tighter",
+    variant === "header" ? "pointer-events-none" : undefined,
+    className
+  );
+
+  if (logoToUse) {
+    return (
+      <Image
+        src={urlFor(logoToUse).url()}
+        alt={settings?.siteName || ""}
+        width={width}
+        height={height}
+        title={settings?.siteName || ""}
+        placeholder={
+          logoToUse?.asset?.metadata?.lqip &&
+          logoToUse?.asset?.mimeType !== "image/svg+xml"
+            ? "blur"
+            : undefined
+        }
+        blurDataURL={logoToUse?.asset?.metadata?.lqip || undefined}
+        className={logoClass}
+        sizes={sizes}
+      />
+    );
+  }
+
+  if (!shouldRenderFallback) {
+    return null;
+  }
+
+  return (
+    <span className={fallbackClass}>
       {settings?.siteName || "Logo"}
     </span>
   );

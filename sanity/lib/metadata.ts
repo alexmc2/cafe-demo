@@ -1,13 +1,14 @@
 // sanity/lib/metadata.ts
-import { urlFor } from "@/sanity/lib/image";
-import { PAGE_QUERYResult, POST_QUERYResult } from "@/sanity.types";
+import { urlFor } from '@/sanity/lib/image';
+import { PAGE_QUERYResult, POST_QUERYResult } from '@/sanity.types';
 
-const isProduction = process.env.NEXT_PUBLIC_SITE_ENV === "production";
-const fallbackSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const isProduction = process.env.NEXT_PUBLIC_SITE_ENV === 'production';
+const fallbackSiteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 const siteDescription =
-  "Schema UI Starter is a Sanity-powered marketing experience built with Next.js.";
-const siteTitle = "Sanity Next.js Website | Schema UI Starter";
-const siteLogoUrl = new URL("/demo-logo.svg", fallbackSiteUrl).toString();
+  'Fast, professional, mobile-first website for cafes and restaurants. Easy to update, SEO optimised, and built to convert visitors into customers.';
+const siteTitle = 'Café Demo | Professional Website for Independent Cafes';
+const siteLogoUrl = new URL('/demo-logo.svg', fallbackSiteUrl).toString();
 
 export function generatePageMetadata({
   page,
@@ -18,11 +19,12 @@ export function generatePageMetadata({
 }) {
   const rawMetaTitle = page?.meta_title?.trim();
   const documentTitle =
-    typeof page === "object" && page && "title" in page
+    typeof page === 'object' && page && 'title' in page
       ? (page as { title?: string | null }).title
       : null;
-  const rawTitle = typeof documentTitle === "string" ? documentTitle.trim() : null;
-  const title = rawMetaTitle?.length ? rawMetaTitle : rawTitle ?? siteTitle;
+  const rawTitle =
+    typeof documentTitle === 'string' ? documentTitle.trim() : null;
+  const title = rawMetaTitle?.length ? rawMetaTitle : (rawTitle ?? siteTitle);
 
   const rawDescription = page?.meta_description?.trim();
   const description = rawDescription?.length ? rawDescription : siteDescription;
@@ -44,19 +46,19 @@ export function generatePageMetadata({
           height: page?.ogImage?.asset?.metadata?.dimensions?.height || 630,
         },
       ],
-      locale: "en_US",
-      type: "website",
+      locale: 'en_GB',
+      type: 'website',
     },
     other: {
-      "og:logo": siteLogoUrl,
+      'og:logo': siteLogoUrl,
     },
     robots: !isProduction
-      ? "noindex, nofollow"
+      ? 'noindex, nofollow'
       : page?.noindex
-        ? "noindex"
-        : "index, follow",
+        ? 'noindex'
+        : 'index, follow',
     alternates: {
-      canonical: `/${slug === "index" ? "" : slug}`,
+      canonical: `/${slug === 'index' ? '' : slug}`,
     },
   };
 }

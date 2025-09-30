@@ -22,7 +22,11 @@ export default async function Footer() {
             className="inline-block text-center"
             aria-label="Home page"
           >
-            <Logo settings={settings} />
+            <Logo
+              settings={settings}
+              variant="footer"
+              className="block"
+            />
           </Link>
           <div className="flex flex-wrap items-center justify-center gap-7 text-primary">
             {navigation[0]?.links?.map((navItem: SanityLink) => (
