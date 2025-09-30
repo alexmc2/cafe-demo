@@ -15,6 +15,11 @@ type LogoProps = {
   variant?: LogoVariant;
   className?: string;
   sizes?: string;
+  priority?: boolean;
+  fetchPriority?: "high" | "low" | "auto";
+  loading?: "eager" | "lazy";
+  alt?: string;
+  ariaHidden?: boolean;
 };
 
 export default function Logo({
@@ -22,6 +27,11 @@ export default function Logo({
   variant = "header",
   className,
   sizes,
+  priority,
+  fetchPriority,
+  loading,
+  alt,
+  ariaHidden,
 }: LogoProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -77,10 +87,11 @@ export default function Logo({
   );
 
   if (logoToUse) {
+    const altText = alt ?? settings?.siteName ?? "";
     return (
       <Image
         src={urlFor(logoToUse).url()}
-        alt={settings?.siteName || ""}
+        alt={altText}
         width={width}
         height={height}
         title={settings?.siteName || ""}
@@ -93,6 +104,10 @@ export default function Logo({
         blurDataURL={logoToUse?.asset?.metadata?.lqip || undefined}
         className={logoClass}
         sizes={sizes}
+        priority={priority}
+        fetchPriority={fetchPriority}
+        loading={loading}
+        aria-hidden={ariaHidden ?? undefined}
       />
     );
   }

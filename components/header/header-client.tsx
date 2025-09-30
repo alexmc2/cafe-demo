@@ -169,6 +169,11 @@ export default function HeaderClient({
               variant="header"
               className="max-h-8 w-auto sm:max-h-10"
               sizes="(min-width: 1280px) 160px, (min-width: 640px) 120px, 96px"
+              priority
+              fetchPriority="high"
+              loading="eager"
+              alt=""
+              ariaHidden
             />
             <span className="sr-only">
               {settings?.siteName || 'Sanity Next.js Website home'}
