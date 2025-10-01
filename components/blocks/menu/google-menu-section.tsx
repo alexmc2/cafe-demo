@@ -104,6 +104,8 @@ type ParsedCategory = {
 
 type MenuCSSVariables = CSSProperties & Record<`--menu-${string}`, string>;
 
+const MAX_SCROLL_ATTEMPTS = 24;
+
 const COLOR_FALLBACKS = {
   background: {
     base: 'var(--background)',
@@ -873,6 +875,9 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
 
   const navButtonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const hasRanInitialScroll = useRef(false);
+  const pendingScrollSlugRef = useRef<string | null>(null);
+  const lastClickedSlugRef = useRef<string | null>(null);
+  const scrollTimeoutRef = useRef<number | null>(null);
 
   const scrollActiveNavButtonIntoView = useCallback(
     (button: HTMLButtonElement | null) => {
@@ -907,6 +912,113 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
     },
     []
   );
+
+  const cancelPendingAnimation = useCallback(() => {
+    if (typeof window === 'undefined') {
+      scrollTimeoutRef.current = null;
+      return;
+    }
+
+    if (scrollTimeoutRef.current !== null) {
+      window.clearTimeout(scrollTimeoutRef.current);
+      scrollTimeoutRef.current = null;
+    }
+  }, []);
+
+  const scrollCategoryIntoView = useCallback((slug: string) => {
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      pendingScrollSlugRef.current = null;
+      cancelPendingAnimation();
+      return;
+    }
+
+    cancelPendingAnimation();
+
+    const readHeaderOffset = () => {
+      const root = document.documentElement;
+      if (!root) {
+        return 0;
+      }
+
+      const styles = window.getComputedStyle(root);
+      const raw = styles.getPropertyValue('--header-height');
+      const parsed = Number.parseFloat(raw);
+
+      if (Number.isFinite(parsed)) {
+        return parsed;
+      }
+
+      return 0;
+    };
+
+    const attemptScroll = (attempt: number) => {
+      const target = document.getElementById(slug);
+
+      if (!target) {
+        if (attempt < MAX_SCROLL_ATTEMPTS) {
+          scrollTimeoutRef.current = window.setTimeout(
+            () => attemptScroll(attempt + 1),
+            40
+          );
+          return;
+        }
+
+        pendingScrollSlugRef.current = null;
+        cancelPendingAnimation();
+        return;
+      }
+
+      const rect = target.getBoundingClientRect();
+      const isCollapsed =
+        rect.height === 0 || target.closest('[data-state="closed"]');
+
+      if (isCollapsed && attempt < MAX_SCROLL_ATTEMPTS) {
+        scrollTimeoutRef.current = window.setTimeout(
+          () => attemptScroll(attempt + 1),
+          40
+        );
+        return;
+      }
+
+      const headerOffset = readHeaderOffset();
+      const extraGap = 12;
+      const targetTop =
+        rect.top + window.pageYOffset - headerOffset - extraGap;
+
+      window.scrollTo({
+        top: targetTop <= 0 ? 0 : targetTop,
+        behavior: 'smooth',
+      });
+
+      const navButton = navButtonRefs.current[slug];
+      navButton?.focus?.({ preventScroll: true });
+
+      pendingScrollSlugRef.current = null;
+      cancelPendingAnimation();
+    };
+
+    // allow the sheet close animation to release scroll lock before scrolling
+    scrollTimeoutRef.current = window.setTimeout(() => attemptScroll(0), 80);
+  }, [cancelPendingAnimation]);
+
+  useEffect(() => {
+    return () => {
+      cancelPendingAnimation();
+    };
+  }, [cancelPendingAnimation]);
+
+  useEffect(() => {
+    const slug = pendingScrollSlugRef.current;
+    if (!slug) {
+      return;
+    }
+
+    if (!openCategories.includes(slug)) {
+      return;
+    }
+
+    scrollCategoryIntoView(slug);
+  }, [openCategories, pendingScrollSlugRef, scrollCategoryIntoView]);
 
   useEffect(() => {
     if (!hasRanInitialScroll.current) {
@@ -1067,17 +1179,19 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
 
   const handleNavClick = (slug: string) => {
     hasRanInitialScroll.current = true;
-    const element = document?.getElementById(slug);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    lastClickedSlugRef.current = slug;
+    pendingScrollSlugRef.current = slug;
     setActiveCategory(slug);
+    const alreadyOpen = openCategories.includes(slug);
     setOpenCategories((prev) => {
       if (prev.includes(slug)) {
         return prev;
       }
       return [...prev, slug];
     });
+    if (alreadyOpen) {
+      scrollCategoryIntoView(slug);
+    }
   };
 
   if (!parsedCategories.length) {
@@ -1153,6 +1267,16 @@ export default function MenuGoogleSection(props: MenuGoogleSectionProps) {
                 side="left"
                 className="backdrop-blur-xl border border-[color:var(--menu-border-color)] bg-background text-[color:var(--menu-headline)] dark:border-[color:var(--menu-border-color-dark)] dark:bg-[color:var(--menu-background-dark)] dark:text-[color:var(--menu-headline-dark)]"
                 style={paletteStyle}
+                onCloseAutoFocus={(event) => {
+                  event.preventDefault();
+                  const slug = lastClickedSlugRef.current;
+                  if (!slug) {
+                    return;
+                  }
+
+                  const nextFocusTarget = navButtonRefs.current[slug];
+                  nextFocusTarget?.focus?.({ preventScroll: true });
+                }}
               >
                 <SheetHeader className="border-b border-[color:var(--menu-border-color)] px-4 pt-5 dark:border-[color:var(--menu-border-color-dark)]">
                   <SheetTitle className="text-lg font-semibold text-[color:var(--menu-headline)] dark:text-[color:var(--menu-headline-dark)]">
