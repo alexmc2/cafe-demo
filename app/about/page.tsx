@@ -14,15 +14,13 @@ import { ABOUT_SECTION_DEFAULT_WIDTH } from '../about/components/about-layout';
 type HeroProps = {
   containerClassName?: string;
   sectionClassName?: string;
-  titleClassName?: string;
 };
 
 const CONTACT_EMAIL = 'alexandramcgarryx@gmail.com';
 
-export default function Hero({
+function Hero({
   containerClassName,
   sectionClassName,
-  titleClassName,
 }: HeroProps = {}) {
   const resolvedContainerWidth =
     containerClassName ?? ABOUT_SECTION_DEFAULT_WIDTH;
@@ -210,4 +208,8 @@ export default function Hero({
       </div>
     </section>
   );
+}
+
+export default function AboutPage() {
+  return <Hero />;
 }
