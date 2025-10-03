@@ -51,7 +51,7 @@ function Hero({
             <h1 className="mx-auto mb-6 text-5xl font-bold tracking-tight sm:text-7xl">
               A professional website
               <br />
-              for your cafe
+              for your café
             </h1>
           </FadeIn>
 
