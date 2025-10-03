@@ -1,3 +1,4 @@
+// components/blocks/gallery/gallery-client.tsx
 'use client';
 
 import { useCallback, useMemo, useState } from 'react';

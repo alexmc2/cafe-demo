@@ -1,4 +1,4 @@
-// components/ui/fade-in.tsx
+// components/ui/fade.in.tsx
 'use client';
 
 import {

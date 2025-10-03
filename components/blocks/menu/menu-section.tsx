@@ -1,4 +1,4 @@
-// components/blocks/menu-section.tsx
+// components/blocks/menu/menu-section.tsx
 import Image from 'next/image';
 import { stegaClean } from 'next-sanity';
 import { cn } from '@/lib/utils';

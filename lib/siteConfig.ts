@@ -1,3 +1,4 @@
+// lib/siteConfig.ts
 const normalizeSiteUrl = (value?: string | null) => {
   if (!value || value.trim() === "") {
     return null;

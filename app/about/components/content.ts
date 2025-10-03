@@ -1,3 +1,4 @@
+// app/about/components/content.ts
 import type { LucideIcon } from 'lucide-react';
 import { Images, Megaphone, Sparkles } from 'lucide-react';
 

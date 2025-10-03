@@ -1,3 +1,4 @@
+// app/about/components/features.tsx
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { FadeIn } from '@/components/ui/fade-in';

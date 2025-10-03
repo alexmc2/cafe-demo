@@ -1,3 +1,4 @@
+// components/404.tsx
 'use client';
 
 // components/404.tsx

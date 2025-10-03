@@ -1,3 +1,4 @@
+// app/about/components/demo-carousel.tsx
 'use client';
 
 import * as React from 'react';

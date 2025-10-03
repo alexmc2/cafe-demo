@@ -1,3 +1,4 @@
+// app/about/components/pricing.tsx
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
@@ -14,7 +15,6 @@ export default function Pricing() {
     priceLabel,
     description,
     highlight,
-    contactEmail,
     walkthroughHref,
     footnote,
   } = PRICING_CONTENT;
@@ -43,9 +43,7 @@ export default function Pricing() {
       <FadeIn delay={200}>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Button asChild size="lg">
-            <a href={`mailto:${contactEmail}?subject=Cafe%20website%20enquiry`}>
-              Get in touch
-            </a>
+            <Link href="/about/contact">Get in touch</Link>
           </Button>
           <Button asChild size="lg" variant="outline">
             <Link href={walkthroughHref}>

@@ -1,3 +1,4 @@
+// app/about/components/hero.tsx
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
@@ -22,8 +23,6 @@ export default function Hero({
   sectionClassName,
   titleClassName,
 }: HeroProps = {}) {
-  const contactHref = `mailto:${HERO_CONTENT.contactEmail}?subject=${encodeURIComponent('Interested in a cafe website')}`;
-
   const resolvedContainerWidth =
     containerClassName ?? ABOUT_SECTION_DEFAULT_WIDTH;
   const resolvedTitleWidth = titleClassName ?? ABOUT_SECTION_DEFAULT_WIDTH;
@@ -63,7 +62,7 @@ export default function Hero({
           <FadeIn delay={300}>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Button asChild size="lg">
-                <a href={contactHref}>Get in touch</a>
+                <Link href="/about/contact">Get in touch</Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link href={HERO_CONTENT.walkthroughHref}>

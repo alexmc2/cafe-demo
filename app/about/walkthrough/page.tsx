@@ -1,4 +1,4 @@
-// app/demo/walkthrough/page.tsx
+// app/about/walkthrough/page.tsx
 export const revalidate = 0;
 
 import Link from 'next/link';

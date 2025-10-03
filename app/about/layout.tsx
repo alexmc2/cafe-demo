@@ -1,3 +1,4 @@
+// app/about/layout.tsx
 import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
@@ -10,7 +11,7 @@ type AboutLayoutProps = {
   children: ReactNode;
 };
 
-const BOOK_A_CALL_EMAIL = 'hello@cafedemo.co.uk';
+const BOOK_A_CALL_EMAIL = 'alexandramcgarryx@gmail.com';
 const BOOK_A_CALL_SUBJECT = 'Interested in a café website';
 
 const CTA_MAILTO = `mailto:${BOOK_A_CALL_EMAIL}?subject=${encodeURIComponent(
@@ -35,31 +36,11 @@ export default function AboutLayout({ children }: AboutLayoutProps) {
             </span>
           </div>
           <nav className="flex flex-wrap items-center gap-3 text-muted-foreground">
-            <Link
-              href="/"
-              className="transition-colors hover:text-primary"
-            >
+            <Link href="/" className="transition-colors hover:text-primary">
               Full website
             </Link>
-            <Link
-              href="/news"
-              className="transition-colors hover:text-primary"
-            >
-              Latest updates
-            </Link>
-            <Link
-              href="/studio"
-              className="transition-colors hover:text-primary"
-            >
-              CMS login
-            </Link>
+
             <ModeToggle />
-            <Button asChild size="sm">
-              <a href={CTA_MAILTO} className="inline-flex items-center">
-                Book a call
-                <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
-              </a>
-            </Button>
           </nav>
         </div>
       </header>

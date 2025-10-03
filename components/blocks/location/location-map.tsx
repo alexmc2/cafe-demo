@@ -1,4 +1,4 @@
-// components/blocks/location/LocationMap.tsx
+// components/blocks/location/location-map.tsx
 "use client";
 
 import { useMemo } from "react";

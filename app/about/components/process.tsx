@@ -1,3 +1,4 @@
+// app/about/components/process.tsx
 import Link from 'next/link';
 import { ArrowRight, PlayCircle } from 'lucide-react';
 

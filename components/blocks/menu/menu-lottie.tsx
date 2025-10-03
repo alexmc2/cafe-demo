@@ -1,3 +1,4 @@
+// components/blocks/menu/menu-lottie.tsx
 "use client";
 
 import dynamic from "next/dynamic";
