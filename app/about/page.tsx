@@ -49,7 +49,7 @@ function Hero({
           {/* Main headline - huge and simple */}
           <FadeIn delay={100} className="w-full">
             <h1 className="mx-auto mb-6 text-5xl font-bold tracking-tight sm:text-7xl">
-              A proper website
+              A professional website
               <br />
               for your cafe
             </h1>
@@ -58,7 +58,7 @@ function Hero({
           {/* Subheadline - bigger and clearer */}
           <FadeIn delay={150} className="w-full">
             <p className="mx-auto mb-4 max-w-2xl text-2xl text-muted-foreground sm:text-3xl">
-              Update your menu yourself.
+              Update your website yourself.
               <br />
               No monthly fees.
             </p>
