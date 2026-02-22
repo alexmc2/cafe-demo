@@ -4,7 +4,7 @@
 
 # Business Website Platform
 
-This is a production-ready business website platform with a flexible block-based content system powered by Sanity and rendered through Next.js. It is designed to be reusable across industries.
+This is a production-ready business website platform with a flexible block-based content system powered by Sanity and rendered through Next.js. It is designed to be reusable.
 
 Clients can manage and update their own content through Sanity Studio, including page sections, text, images, navigation, and news posts, without needing developer support for day-to-day edits.
 
@@ -160,12 +160,3 @@ Optional but recommended:
 
 - `npm run typegen` - regenerate Sanity schema types
 
-## Deploy Notes
-
-This project is ready for Vercel deployment.
-
-- Set env vars in the Vercel project settings.
-
-- Configure a Sanity webhook to `POST /api/sanity/revalidate`.
-
-- Keep `SANITY_REVALIDATE_SECRET` aligned in both Sanity and Vercel.
