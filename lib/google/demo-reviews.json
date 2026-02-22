@@ -1,0 +1,103 @@
+{
+  "placeName": "Demo Cafe & Kitchen",
+  "averageRating": 4.9,
+  "userRatingCount": 328,
+  "reviews": [
+    {
+      "id": "demo-review-01",
+      "rating": 5,
+      "text": "Outstanding brunch and genuinely warm service. Every dish was beautifully plated, coffee was excellent, and the team made us feel welcome from the moment we walked in.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "2 weeks ago",
+      "publishTime": "2026-02-07T10:21:00Z",
+      "author": {
+        "name": "Amelia Rivera",
+        "avatarUrl": "https://i.pravatar.cc/150?img=32"
+      }
+    },
+    {
+      "id": "demo-review-02",
+      "rating": 5,
+      "text": "The quality is consistently high. Fresh ingredients, thoughtful menu options, and quick service even when the room is busy. Easily one of our favorite spots.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "3 weeks ago",
+      "publishTime": "2026-01-31T14:09:00Z",
+      "author": {
+        "name": "Noah Kim",
+        "avatarUrl": "https://i.pravatar.cc/150?img=12"
+      }
+    },
+    {
+      "id": "demo-review-03",
+      "rating": 5,
+      "text": "Perfect atmosphere for a relaxed lunch. The staff were attentive without hovering, and the desserts were exceptional. We will absolutely be back.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "1 month ago",
+      "publishTime": "2026-01-19T18:44:00Z",
+      "author": {
+        "name": "Priya Desai",
+        "avatarUrl": "https://i.pravatar.cc/150?img=47"
+      }
+    },
+    {
+      "id": "demo-review-04",
+      "rating": 4,
+      "text": "Great food and very friendly team. We waited a little longer than expected during peak time, but the quality and flavor definitely made up for it.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "1 month ago",
+      "publishTime": "2026-01-11T11:33:00Z",
+      "author": {
+        "name": "Lucas Bennett",
+        "avatarUrl": "https://i.pravatar.cc/150?img=15"
+      }
+    },
+    {
+      "id": "demo-review-05",
+      "rating": 5,
+      "text": "Incredible attention to detail. The menu is creative, portions are generous, and everything tasted fresh. We brought friends and everyone was impressed.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "2 months ago",
+      "publishTime": "2025-12-27T09:16:00Z",
+      "author": {
+        "name": "Sofia Morales",
+        "avatarUrl": "https://i.pravatar.cc/150?img=25"
+      }
+    },
+    {
+      "id": "demo-review-06",
+      "rating": 5,
+      "text": "Five stars for consistency alone. This place gets the fundamentals right every time: great coffee, great food, great people, and a clean comfortable setting.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "2 months ago",
+      "publishTime": "2025-12-14T08:52:00Z",
+      "author": {
+        "name": "Ethan Walsh",
+        "avatarUrl": "https://i.pravatar.cc/150?img=8"
+      }
+    },
+    {
+      "id": "demo-review-07",
+      "rating": 5,
+      "text": "Absolutely loved this place. The team handled a large table for us effortlessly and every order came out exactly right. Professional and genuinely kind.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "3 months ago",
+      "publishTime": "2025-11-30T19:05:00Z",
+      "author": {
+        "name": "Chloe Nguyen",
+        "avatarUrl": "https://i.pravatar.cc/150?img=44"
+      }
+    },
+    {
+      "id": "demo-review-08",
+      "rating": 4,
+      "text": "Really enjoyable visit with strong flavors and polished presentation. One item was slightly salty for my taste, but overall it was a very positive experience.",
+      "languageCode": "en",
+      "relativePublishTimeDescription": "4 months ago",
+      "publishTime": "2025-10-20T13:28:00Z",
+      "author": {
+        "name": "Marcus Patel",
+        "avatarUrl": "https://i.pravatar.cc/150?img=19"
+      }
+    }
+  ]
+}

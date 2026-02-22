@@ -133,7 +133,7 @@ export default async function ReviewsCarousel(block: ReviewsCarouselBlock) {
 
   const cta = block.cta ?? null;
   const ctaHref = cta?.href ? stegaClean(cta.href) : null;
-  const ctaLabel = cta?.title ? stegaClean(cta.title) : 'Read more reviews';
+  const ctaLabel = cta?.title ? stegaClean(cta.title) : null;
   const ctaTarget = cta?.target ? '_blank' : undefined;
   const buttonVariant = cta?.buttonVariant
     ? (stegaClean(cta.buttonVariant) as ReviewsCarouselLink['buttonVariant'])
@@ -259,7 +259,7 @@ export default async function ReviewsCarousel(block: ReviewsCarouselBlock) {
           </FadeIn>
         ) : null}
 
-        {ctaHref ? (
+        {ctaHref && ctaLabel ? (
           <FadeIn as="div" delay={420} className="flex justify-center">
             <Button asChild variant={buttonVariant ?? 'default'}>
               <Link
